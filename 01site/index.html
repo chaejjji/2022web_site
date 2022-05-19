@@ -143,8 +143,9 @@
         .sec_2st>.left{float:left;width: 440px;}
         .sec_2st>.right{float:left;width: 1000px;}
         .sec_2st>.right li>img{float:left;width: 492px;margin-right: 16px;margin-bottom: 16px;}
-        .sec_2st>.right li:nth-child(2){margin-right: 0;}
-        .sec_2st>.right li:nth-child(4){margin-right: 0;}
+        .sec_2st>.right li>img:nth-child(2){margin-right: 0;}
+        .sec_2st>.right li>img:nth-child(4){margin-right: 0;}
+        .sec_2st>.right li>img:last-child{width: 100%;margin-bottom: 0;}
 
         /* common : 공통 정보 사용하는 것 */
         h2{font-size:40px !important;}
@@ -170,11 +171,13 @@
        .sec_3st>.na{font-size:20px;color:white;text-align:center;margin-bottom: 30px;}
        .sec_3st>.da{font-size:40px;color:white;text-align:center;margin-bottom: 30px;}
 
+       .buttonWrap{text-align:center;}
        .button{
-            background-color: skyblue;
-            padding:20px 50px;
-            display:inline-block;
-            border-radius:30px;
+           color:white;
+           background-color: skyblue;
+           padding:20px 50px;
+           display:inline-block;
+           border-radius:30px;
        }
 
     </style>
@@ -293,6 +296,7 @@
                         <img src="images/banner1.png" alt="">
                         <img src="images/banner1.png" alt="">
                         <img src="images/banner1.png" alt="">
+                        <img src="images/banner2.png" alt="">
                     </li>
                 </ul>
             </div>
@@ -311,8 +315,10 @@
             <div class="da">
                 070-4331-5361
             </div>
-            <div class="button">
-                상담하기
+            <div class="buttonWrap">
+                <div class="button">
+                    상담하기
+                </div>
             </div>
         </section>
     </div>

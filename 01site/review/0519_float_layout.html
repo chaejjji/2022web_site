@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+
+    <style>
+        /* reset */
+        *{margin: 0;padding: 0;}
+        li{list-style:none}
+        .clearfix:after{content:"";display:block;clear:both}
+
+        body{font-family: 'Noto Sans KR', sans-serif;}
+        a:link{color:#333;text-decoration:none}
+        a:visited{color:#333}
+        a:hover{color:#333}
+
+        /* header */
+        .headerWrap{width: 1440px;margin: 0 auto;
+            /* background-color: skyblue; */
+        }
+
+        .headerWrap>h1{width: 168px;float:left;line-height:60px;}
+        .headerWrap>.header{width: 540px;line-height:60px;float:right;}
+        .headerWrap ul>li{float:left;width: 25%;}
+
+        .headerWrap ul>li>a{display:block;line-height: 60px;font-size:15px;text-align:center;}
+
+        /* visual */
+        .visualWrap{background-image: url(../images/210616_bg.jpg);height: 643px;}
+        .visual{width: 1440px;height: 643px;margin: 0 auto;padding:250px 0}
+        .visual>h2{color:white;font-size:50px;}
+
+        /* section 1st */
+        .sec_1st{width: 1440px;margin: 0 auto;}
+        .sec_1st>h2{text-align:center;font-size:40px;padding: 120px 0;}
+        .sec_1st>div{width: 1440px;margin: 0 auto;}
+        .sec_1st .conItem>div{float:left;width: 701px;}
+    </style>
+</head>
+<body>
+
+    <header class="headerWrap clearfix">
+        <h1><a href="#"><img src="../images/logo.png" alt=""></a></h1>
+
+        <div class="header">
+            <ul class="clearfix">
+                <li><a href="#">아마존 입점</a></li>
+                <li><a href="#">알리바바 입점</a></li>
+                <li><a href="#">쇼핑몰 제작</a></li>
+                <li><a href="#">국내몰 운영</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="visualWrap">
+        <div class="visual">
+            <h2>중소벤처기업진흥공단<br>온라인수출지원사업</h2>
+        </div>
+    </div>
+
+    <section class="sec_1st">
+        <h2>해외 마켓 전문가가<br>수출을 도와드립니다</h2>
+        <div class="content clearfix">
+
+            <div class="conItem clearfix">
+                <div class="img"><img src="../images/logo_amazon.png" alt=""></div>
+
+                <div class="textWrap">
+                    <h3>아마존 입점</h3>
+                    <p>전 세계 3억명의 아마존 고객을 대상으로<br>고객사의 온라인 스토어를 오픈 및 운영 대행</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+
+
+    <style>
+        /* reset */
+        *{margin: 0;padding: 0;}
+        li{list-style:none}
+        .clearfix:after{content:"";display:block;clear;both;}
+        image{display:block;}
+        body{font-family: 'Noto Sans KR', sans-serif;}
+        
+        a:link{color:#333;text-decoration:none}
+        a:visited{color:#333}
+        a:hover{color:#333}
+
+        /* header */
+        .headerWrap{width: 1440px;margin: 0 auto;}
+        .headerWrap>h1{width: 168px;text-align:center;float:left;line-height:60px}
+        
+        .headerWrap>.header{width: 540px;line-height:60px;float:right;}
+        .headerWrap ul>li{float:left;width: 25%;}
+        .headerWrap ul>li>a{display:block;font-size:15px;line-height:60px;text-align:center;}
+
+        .headerWrap{width: 1440px;margin: 0 auto;
+            /* background-color: skyblue; */
+        }
+
+        /* .headerWrap>h1{width: 168px;float:left;line-height:60px;}
+        .headerWrap>.header{width: 540px;line-height:60px;float:right;}
+        .headerWrap ul>li{float:left;width: 25%;}
+        .headerWrap ul>li>a{display:block;line-height: 60px;font-size:15px;text-align:center;} */
+
+
+        /* visual */
+        .visualWrap{background-image: url(../images/210616_bg.jpg);height: 643px;}
+        .visual{width: 1440px;height: 643px;margin: 0 auto;padding:250px 0}
+        .visual>h2{color:white;font-size:50px;}
+
+        /* .bg1{background-color: #f6f6f6;} */
+        /* .py130{padding-top: 130px;padding-bottom: 130px;} */
+        /* section 2st */
+        .sec_2st{width: 1440px;;margin: 0 auto;}
+        .sec_2st>.left{float:left;width: 440px;}
+        .sec_2st>.left>h2{font-size:40px;}
+
+        .sec_2st>.right{float:left;width: 1000px;}
+        .sec_2st>.right li{float:left;width: 492px;height: 127px;margin-right: 16px;margin-bottom: 16px;
+            /* background-color: pink; */
+        }
+        .sec_2st>.right li:nth-child(2){margin-right: 0;}
+        .sec_2st>.right li:nth-child(4){margin-right: 0;}
+
+
+
+    </style>
+
+</head>
+<body>
+
+    <!-- header -->
+    <header class="headerWrap clearfix">
+        <h1><a href="#"><img src="../images/logo.png" alt=""></a></h1>
+
+        <div class="header">
+            <ul class="clearfix">
+                <li><a href="#">아마존 입점</a></li>
+                <li><a href="#">알리바바 입점</a></li>
+                <li><a href="#">쇼핑몰 제작</a></li>
+                <li><a href="#">국내몰 운영</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- visual -->
+    <div class="visualWrap">
+        <div class="visual">
+            <h2>알리바바닷컴<br>GGS 멤버십 할인</h2>
+        </div>
+    </div>
+
+    <!-- section 2st -->
+    <div class="bg1 py130">
+        <section class="sec_2st clearfix">
+            <div class="left">
+                <h2>가비아 글로벌이<br>더 특별한 이유</h2>
+            </div>
+    
+            <div class="right">
+                <ul class="clearfix">
+                    <li><img src="../images/banner1.png" alt=""></li>
+                    <li><img src="../images/banner1.png" alt=""></li>
+                    <li><img src="../images/banner1.png" alt=""></li>
+                    <li><img src="../images/banner1.png" alt=""></li>
+                </ul>
+            </div>
+    
+        </section>
+    </div>
+
+    
+</body>
+</html>
