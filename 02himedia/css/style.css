@@ -1,0 +1,42 @@
+@charset "utf-8";
+
+body{font-family: 'Nanum Gothic', sans-serif;}
+
+/* header  */
+.headerTopWrap{border-bottom: 1px solid #dcdcdc;margin-bottom: 16px;}
+.headerTop{width: 980px;height: 26px;margin: 0 auto;}
+.topMenu ul{float: right;}
+.topMenu li{float: left;position: relative;}
+.topMenu li:after{content:"";display: block;width: 1px;height: 11px;background: #dcdcdc;
+    position: absolute;top: 7px;right: 0;
+}
+/* li 사이에 줄 -> a가 block단위여서 줄이 메뉴 밑으로 내려가기 때문에 position값 주기*/
+.topMenu li:last-child:after{display:none;}
+/* 마지막 메뉴 옆에 줄 없애기(display:none은 보였다 안 보였다 하게 하는 기능) */
+.topMenu li a{display: block;padding: 7px 10px;font-size:12px;line-height: 12px}
+
+#headerWrap h1{width: 151px;margin: 0 auto;margin-bottom: 16px;}
+#headerWrap h1 a{color:#333}
+#headerWrap .toggle{width: 48px;height: 48px;
+    border: 1px solid #cdcdcd;position: absolute;left:calc( 50% + 442px );top: 38px;margin-bottom: 16px;
+    /* 980 / 2 = 490 -> 490 - 48(toggle 수치값) = 442 */
+    /* 검사에서 보고 내리면서 left랑 top값 맞추기 */
+}
+
+.toggle div{width: 20px;height: 2px;background-color: #666;
+    position: absolute;left:calc( 50% - 10px );top:calc( 50% - 1px );
+    cursor:pointer;
+    /* 커서를 pointer로 바꿔주는 것 */
+}
+.toggle div:first-child{top:calc( 50% - 9px);}
+.toggle div:last-child{top:calc( 50% + 7px );}
+/* 계산해서 값 맞춰춘 것(후에 flex와 transform 사용하면 편한 부분) */
+
+
+#headerMenuWrap{background-color: #1d5da4;}
+#headerMenuWrap .headerMenu{width: 980px;height: 45px;margin: 0 auto;}
+
+.bottomMenu li{float:left;width:calc( 100% / 6 );border-left:1px solid #336FAE;}
+.bottomMenu li:last-child{border-right:1px solid #336FAE;}
+.bottomMenu li a{display:block;line-height:45px;text-align:center;font-size:15px;color:#EAEEF4;}
+.bottomMenu li a:hover{background-color: #335DAC;}
