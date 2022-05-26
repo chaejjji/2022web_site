@@ -57,7 +57,7 @@ body{font-family: 'Nanum Gothic', sans-serif;}
 .visualWrap .visual img{position: absolute;right: 0;}
 
 /* banWrap */
-.banWrap{background-color: #eee;height: 196px;margin-bottom: 25px;}
+.banWrap{background-color: #eee;margin-bottom: 25px;}
 
 .banWrap .banner{width: 980px;margin: 0 auto;text-align:center;}
 .banWrap .banner li{float:left;width:calc( 100% / 5 );height:196px;padding-top:14px;
@@ -65,8 +65,8 @@ body{font-family: 'Nanum Gothic', sans-serif;}
 }
 .banWrap .banner li img{margin: 0 auto;margin-bottom: 16px;}
 /* block단위에서 가운데로는 m 0 auto */
-.banWrap .banner li h3{font-size:19px;line-height:19px;letter-spacing:-7.5%;text-align:center;margin-bottom: 10px;color:#eee}
-.banWrap .banner li p{font-size:14px;line-height:14px;letter-spacing:-5.5%;text-align:center;color:#eee}
+.banWrap .banner li h3{font-size:19px;line-height:19px;letter-spacing:-7.5%;margin-bottom: 10px;color:#eee}
+.banWrap .banner li p{font-size:14px;line-height:14px;letter-spacing:-5.5%;color:#eee}
 /* 글자는 상속이 가능 -> h3, p 말고 banner에 text-align:center 처리해줘도 ok */
 
 .banWrap .banner li:nth-child(1){background-color: #7c99b9;}
