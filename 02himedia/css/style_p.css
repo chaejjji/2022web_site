@@ -5,20 +5,20 @@ body{font-family: 'Nanum Gothic', sans-serif;}
 /* header1 */
 .headerTopWrap .headerTop{width: 980px;margin: 0 auto;}
 .headerTopWrap{border-bottom: 1px solid #dcdcdc;margin-bottom: 16px;}
-.headerTopWrap .headerTop .topMenu{}
-.headerTopWrap .headerTop .topMenu ul{float:right;}
-.headerTopWrap .headerTop .topMenu ul li{float:left;position: relative;}
-.headerTopWrap .headerTop .topMenu ul li:after{content:"";display:block;
+.headerTopWrap .topMenu{}
+.headerTopWrap .topMenu ul{float:right;}
+.headerTopWrap .topMenu ul li{float:left;position: relative;}
+.headerTopWrap .topMenu ul li:after{content:"";display:block;
     width: 1px;height: 12px;background-color: #333;position: absolute;right: 0;top: 7px;
 }
-.headerTopWrap .headerTop .topMenu ul li:last-child:after{display:none;}
-.headerTopWrap .headerTop .topMenu ul li a{display:block;padding:7px 10px;font-size:12px;line-height:12px;}
+.headerTopWrap .topMenu ul li:last-child:after{display:none;}
+.headerTopWrap .topMenu ul li a{display:block;padding:7px 10px;font-size:12px;line-height:12px;}
 
 /* header2 */
 
-#middleWrap{width: 980px;margin: 0 auto;position: relative;}
-#middleWrap h1{margin: 0 auto;width: 151px;}
-#middleWrap h1 a{display:block;color:#333;}
-#middleWrap .toggle{width: 48px;height: 48px;border: 1px solid #cdcdcd;
-    position: absolute;right: 0;
+#center{width:980px;margin: 0 auto;position: relative;}
+#center h1{margin: 0 auto;width: 151px;}
+#center h1 a{display:block;color:#333;}
+#center .toggle{width: 48px;height: 48px;border: 1px solid #cdcdcd;
+    position: absolute;left:calc( 50% + 442px );top:10px;
 }
