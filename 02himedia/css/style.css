@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-body{font-family: 'Nanum Gothic', sans-serif;}
+body{font-family: 'Nanum Gothic', sans-serif;min-width:980px;}
 
 /* header  */
 .headerTopWrap{border-bottom: 1px solid #dcdcdc;margin-bottom: 16px;}
@@ -95,4 +95,23 @@ body{font-family: 'Nanum Gothic', sans-serif;}
 .container.sec02 .txt p{margin-bottom: 20px;}
 .container.sec02 .txt .btn{color:#4d8be0;font-weight:bold;}
 
-.footerWrap{background-color: #525252}
+/* footer */
+.footerWrap{background-color: #5e5e5e;}
+.footerTop{background-color: #4d4d4d;}
+.container.footer .ftNav{float:left;}
+.container.footer .ftNav li{float:left;position: relative;}
+.ftNav li:after{content:"";display:block;width: 1px;height: 13px;background-color: #ccc;
+    position: absolute;right: 0;top: 16.5px;
+}
+.ftNav li:last-child:after{display:none;}
+.ftNav li:first-child a{padding-left:0;}
+.container.footer .ftNav li a{display:block;padding:16px 18px;
+    font-size:13px;color:#ccc;line-height:13px;}
+.container.footer .topMove{float:right;}
+.container.footer .topMove{display:block;width: 60px;height: 45px;padding-top: 11px;}
+.container.footer .topMove img{margin: 0 auto;}
+
+.container.ftBottom{padding:20px 0;}
+.container.ftBottom div{float:left;font-size:13px;color:#ccc;}
+.container.ftBottom .logo{width: 100px;height: 100px;margin-right:20px;font-size:13px;text-align:center;line-height:100px;}
+.container.ftBottom .addr{font-size:13px;}
