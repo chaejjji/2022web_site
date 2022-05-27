@@ -77,7 +77,7 @@ body{font-family: 'Nanum Gothic', sans-serif;min-width:980px;}
 .container{width: 980px;margin: 0 auto;}
 .container li{float:left;width:calc( ( 100% - 50px ) / 3 );float:left;margin-right: 25px;}
 .container li:last-child{margin-right: 0;}
-.container.sec01{height: 300px;margin-bottom: 25px;}
+.container.sec01{margin-bottom: 25px;}
 
 .container.sec01 li img{width: 100%;}
 .container.sec01 li .txt{padding:20px 16px; border: 1px solid #b1b1b1;border-top: 0 none;color:#414141;}
@@ -85,31 +85,34 @@ body{font-family: 'Nanum Gothic', sans-serif;min-width:980px;}
 .container.sec01 .txt p{font-size:14px;line-height:20px;letter-spacing:-5.5%}
 
 
-.container.sec02{height: 175px;}
-.container.sec02 li{border: 1px solid #e1e1e1;padding: 20px 16px;position: relative;overflow:hidden;}
+.container.sec02{margin-bottom: 25px;}
+.container.sec02 li{border: 1px solid #e1e1e1;padding: 20px 16px;position: relative;
+    overflow:hidden;background-repeat:no-repeat;background-position:140px 5px;
+}
 .container.sec02 img{position: absolute;right:-20px;top: 10px;}
 .container.sec02 .txt{width: 140px;position: relative;}
 .container.sec02 .txt h3{margin-bottom: 15px;}
-.container.sec02 .txt p{margin-bottom: 20px;}
+.container.sec02 .txt p{margin-bottom: 10px;}
 .container.sec02 .txt .btn{color:#4d8be0;font-weight:bold;}
 
 /* footer */
 .footerWrap{background-color: #5e5e5e;}
 .footerTop{background-color: #4d4d4d;}
 .container.footer .ftNav{float:left;}
-.container.footer .ftNav li{float:left;position: relative;}
+.ftNav li{float:left;position: relative;}
 .ftNav li:after{content:"";display:block;width: 1px;height: 13px;background-color: #ccc;
     position: absolute;right: 0;top: 16.5px;
 }
+.ftNav li a{display:block;padding:16px 18px;font-size:13px;color:#ccc;line-height:13px;}
+
 .ftNav li:last-child:after{display:none;}
 .ftNav li:first-child a{padding-left:0;}
-.container.footer .ftNav li a{display:block;padding:16px 18px;
-    font-size:13px;color:#ccc;line-height:13px;}
-.container.footer .topMove{float:right;}
-.container.footer .topMove{display:block;width: 60px;height: 45px;padding-top: 11px;}
+
+.container.footer .topMove{float:right;width: 60px;height: 45px;background-color:#404040;}
+.container.footer .topMove a{display:block;line-height:45px;padding-top: 11px;}
 .container.footer .topMove img{margin: 0 auto;}
 
 .container.ftBottom{padding:20px 0;}
 .container.ftBottom div{float:left;font-size:13px;color:#ccc;}
-.container.ftBottom .logo{width: 100px;height: 100px;margin-right:20px;font-size:13px;text-align:center;line-height:100px;}
+.container.ftBottom .logo{width: 100px;height: 100px;margin-right:20px;text-align:center;line-height:100px;}
 .container.ftBottom .addr{font-size:13px;}
