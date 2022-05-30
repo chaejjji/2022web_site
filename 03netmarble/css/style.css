@@ -1,0 +1,27 @@
+@charset "utf-8";
+
+/* header */
+.headerWrap{width: 100%;margin-bottom: 30px;}
+.headerWrap .headerTopWrap{width: 1194px;margin: 0 auto;background-color: darkgray;position: relative;}
+.headerTopWrap h1{float:left;width: 165px;padding:10px 0;}
+.headerTopWrap h1 a{text-align:center;line-height:20px;}
+.navbar{position: absolute;top: 0;right: 0;;width: 442px;}
+.navbar ul li{float:left;width:calc( 100% / 3 );}
+.navbar ul li a{display: block;line-height:35px;padding:10px 0;font-size:20px;color:#fff;
+    letter-spacing:0.03em;text-align:center;}
+
+/* section */
+.sectionWrap{margin: 0 auto;}
+.sectionWrap .section{width: 1194px;}
+.sectionWrap .section .txtWrap{position: absolute;left: 0;}
+
+
+
+
+
+
+
+
+
+
+
