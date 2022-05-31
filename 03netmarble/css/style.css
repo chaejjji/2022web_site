@@ -1,27 +1,52 @@
 @charset "utf-8";
 
+.bx-wrapper {
+    -moz-box-shadow: 0 0 0 #ccc;
+    -webkit-box-shadow: 0 0 0 #ccc;
+    box-shadow: 0 0 0 #ccc;
+    border: 0 solid #fff;
+    background: #fff;
+}
+
+.bx-wrapper {
+    margin-bottom: 0;
+}
+
+.bx-wrapper .bx-pager{
+    bottom: 30px;
+}
+
 /* header */
-.headerWrap{width: 100%;margin-bottom: 30px;}
-.headerWrap .headerTopWrap{width: 1194px;margin: 0 auto;background-color: darkgray;position: relative;}
-.headerTopWrap h1{float:left;width: 165px;padding:10px 0;}
-.headerTopWrap h1 a{text-align:center;line-height:20px;}
-.navbar{position: absolute;top: 0;right: 0;;width: 442px;}
-.navbar ul li{float:left;width:calc( 100% / 3 );}
-.navbar ul li a{display: block;line-height:35px;padding:10px 0;font-size:20px;color:#fff;
-    letter-spacing:0.03em;text-align:center;}
+.headerWrap{
+    /* background-color: skyblue; */
+    position: absolute;z-index:10;width: 100%;
+}
+.headerWrap .header{width: 1280px;margin: 0 auto;position: relative;}
+.headerWrap .header h1{float:left;padding:10px 0;}
+.navbar{float:right;width: 510px;}
+.navbar li{float:left;width:calc( 100% / 3 );}
+.navbar li a{display: block;font-size:20px;color:#fff;padding:10px 0;text-align:center;line-height:30px;}
 
-/* section */
-.sectionWrap{margin: 0 auto;}
-.sectionWrap .section{width: 1194px;}
-.sectionWrap .section .txtWrap{position: absolute;left: 0;}
+/* visual */
+.visual{width: 100%;margin-bottom: 0;}
+.visual .txtWrap{width: 1280px;margin: 0 auto;}
+.visual .txtWrap .txt{position: absolute;top: 40%;}
+.visual .txt h2{font-size:80px;color:#fff;margin-bottom: 20px;}
+.visual .txt p{font-size:24px;color:#fff}
 
+.visual .slideItem{height: 100vh;min-height:800px;
+    background-position:center;background-repeat:no-repeat;
+}
 
+/* sec1 */
+.sec1{padding:170px 0;
+    /* background-color: darkgray; */
+}
+.sec1 .txt{width: 1280px;margin: 0 auto;position: relative;}
+.sec1 .txt h3{display: block;font-size:44px;text-align:left;margin-bottom: 24px;letter-spacing:-2px;
+}
+.sec1 .txt p{display:block;font-size:18px;text-align:left;letter-spacing:-0.6px;
+    position: absolute;right: 0;
+}
 
-
-
-
-
-
-
-
-
+.sec1 .txt .line{display:block;background-color: #FFD44A;width: 70px;height: 5px;}
