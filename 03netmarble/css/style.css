@@ -49,4 +49,45 @@
     position: absolute;right: 0;
 }
 
-.sec1 .txt .line{display:block;background-color: #FFD44A;width: 70px;height: 5px;}
+/* common */
+.line{display:block;background-color: #FFD44A;width: 70px;height: 5px;}
+
+/* sec2_card */
+.sec2{width: 1280px;margin: 0 auto;margin-bottom: 188px;}
+.sec2 li{float:left;width:calc( ( 100% - ( 24px * 2 ))  / 3 );margin-right: 24px;}
+.sec2 li:last-child{margin-right: 0;}
+
+.sec2 .card img{width: 100%;margin-bottom: 26px;cursor:pointer;}
+.sec2 .card img:hover{
+    transform:translate(0,-20px);transition:0.4s;
+    box-shadow: 0 20px 20px rgba(0,0,0,0.1);
+
+}
+
+.card-body{margin-left: 16px;cursor:pointer;}
+.card-body h3{font-size:21px;letter-spacing:-0.6px;margin-bottom: 18px;line-height:32px;font-weight:700;}
+.card-body p{font-size:15px;letter-spacing:-0.6px;line-height:24px;}
+
+/* sec3 */
+.sec3{width: 1280px;margin: 0 auto;position: relative;margin-bottom: 160px;}
+.sec3 .sec3Wrap{width: 1114px;height: 338px;background-color: #FFD44A;position: relative;}
+
+.sec3 .txtWrap{position: absolute;left:104px;top: 102px;}
+.sec3 .txtWrap h3{display:block;font-size:28px;font-weight:500;margin-bottom: 36px;}
+.sec3 .txtWrap p{display:block;font-size:15px;}
+.sec3 .sec3Wrap img{position: absolute;right: -166px;top:102px;}
+
+/* sec4 */
+.sec4{width: 100%;background-color: #F7F8F9;height: 500px;}
+.sec4 .sec4Wrap{width: 1280px;margin: 0 auto;}
+.sec4Wrap .topMenu{position: relative;margin-bottom: 60px;padding-top:160px;}
+.sec4Wrap .topMenu h4{font-size:44px;margin-bottom: 26px;}
+.topMenu .secbar{position: absolute;right: 0;bottom: 0;width:322.5px;}
+.topMenu .secbar li{float:left;width:calc( 100% / 3 );font-size:14px;}
+.topMenu .secbar li a{display:block;text-align:center;line-height:38px;}
+
+
+.sec4Wrap .card {background-color: #fff;width: 360px;height: 466px;}
+.sec4Wrap .card li{float:left;width:calc( ( 100% - ( 30px * 2 )) / 3);margin-right: 30px;}
+.sec4Wrap .card li .cardImg{float:left;width:calc( ( 100% - ( 30px * 2 )) / 3);margin-right: 30px;}
+.sec4Wrap .card li:last-child{margin-right: 0;}
