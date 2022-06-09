@@ -38,7 +38,9 @@ body{font-family: 'Roboto', sans-serif;}
 .headerMainWrap>a{position: absolute;right: 0;top: 20px;}
 
 /* section */
-.sectionWrap{width: 1500px;height: 1310px;margin: 0 auto;}
+.sectionWrap{width: 1500px;height: 1310px;margin: 0 auto;
+    background-image: url(../images/background.jpg);
+}
 
 /* sec1 */
 .sectionWrap .sec1Wrap{width: 1190px;height: 1310px;margin: 0 auto;}
