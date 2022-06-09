@@ -3,8 +3,8 @@
 body{font-family: 'Roboto', sans-serif;}
 
 /* header */
-.headerTop{width: 1500px;background-color: #990e17;margin: 0 auto;}
-.headerTop .headerTopWrap{width: 1190px;margin: 0 auto;margin-bottom: 20px;}
+.headerTop{width: 1500px;background-color: #990e17;margin: 0 auto;margin-bottom: 20px;}
+.headerTop .headerTopWrap{width: 1190px;margin: 0 auto;}
 
 .headerTop .navbarUtil{float:left;}
 .headerTop .navbarUtil li{float:left;}
@@ -25,7 +25,7 @@ body{font-family: 'Roboto', sans-serif;}
 }
 .navbarMenu img{padding:12px 5px 12px 0;}
 
-.headerMain{width: 1500px;margin: 0 auto;}
+.headerMain{width: 1500px;margin: 0 auto;margin-bottom: 20px;}
 .headerMainWrap{width: 1190px;margin: 0 auto;position: relative;}
 
 .headerMainWrap h1{float:left;width: 233px;}
@@ -37,3 +37,9 @@ body{font-family: 'Roboto', sans-serif;}
 
 .headerMainWrap>a{position: absolute;right: 0;top: 20px;}
 
+/* section */
+.sectionWrap{width: 1500px;height: 1310px;margin: 0 auto;}
+
+/* sec1 */
+.sectionWrap .sec1Wrap{width: 1190px;height: 1310px;margin: 0 auto;}
+.sec1Wrap h2{float:left;}
