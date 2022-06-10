@@ -16,8 +16,18 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/jquery.bxslider.css">
     <link rel="stylesheet" href="css/style.css">
 
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+
+    <!-- bxslider -->
+    <script>
+        $(document).ready(function(){
+            $(".slide1").bxSlider()
+        })
+    </script>
 
 </head>
 <body>
@@ -36,8 +46,7 @@
             <nav class="navbarMenu">
                 <ul class="clearfix">
                     <li><a href="#">글자크기</a></li>
-                    <li><img src="images/-.jpg" alt=""></li>
-                    <li><img src="images/+.jpg" alt=""></li>
+                    <li><a href="#">-</a><a href="#">+</a></li>
                     <li><a href="#">찾아오시는길</a></li>
                     <li><a href="#">ENGLISH</a></li>
                     <li><a href="#">사이트맵</a></li>
@@ -63,20 +72,66 @@
     </header>
 
     <!-- section -->
-    <div class="sectionWrap">
-        <!-- sec1 -->
-        <div class="sec1Wrap">
-            <div class="sec1">
-                <h2>함께 나누며 세상을 이끌어<br><span>세계로향하는 경희대학교</span></h2>
-                <ul class="clearfix">
-                    <li><a href="#"><img src="images/icon1.jpg" alt=""></a></li>
-                    <li><a href="#"><img src="images/icon2.jpg" alt=""></a></li>
-                    <li><a href="#"><img src="images/icon3.jpg" alt=""></a></li>
-                    <li><a href="#"><img src="images/icon4.jpg" alt=""></a></li>
-                </ul>
-            </div>
+    <section id="section">
+        <div class="sec1 clearfix container">
+            <h2>함께 나누며 세상을 이끌어<br><span>세계로향하는 경희대학교</span></h2>
+            <ul class="clearfix">
+                <li>
+                    <a href="#"><img src="images/Ellipse 1.png" alt=""></a>
+                    <p>입학절차안내</p>
+                </li>
+                <li>
+                    <a href="#"><img src="images/Ellipse 2.png" alt=""></a>
+                    <p>입학설명회</p>
+                </li>
+                <li>
+                    <a href="#"><img src="images/Ellipse 3.png" alt=""></a>
+                    <p>장학제도</p>
+                </li>
+                <li>
+                    <a href="#"><img src="images/Ellipse 4.png" alt=""></a>
+                    <p>증명서발급</p>
+                </li>
+            </ul>
         </div>
-    </div>
+        <div class="sec2 container">
+            <ul class="clearfix">
+                <li class="slide1">
+                    <div style="background-image:url(images/sec2_1.jpg)" class="slideItem1">
+                        <div class="txtWrap">
+                            <p><span>경희</span>에서<br><span>시작</span>하는<br>새로운<span>꿈</span></p>
+                            <div class="btn">
+                                자세히 보기
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slideBox1">
+                        <img src="images/sec2_2.jpg" alt="">
+                        <p><span>경희</span>에서<br><span>시작</span>하는<br>새로운<span>꿈</span></p>
+                    </div>
+                    <div class="slideBox1">
+                        <img src="images/sec2_3.jpg" alt="">
+                        <p><span>경희</span>에서<br><span>시작</span>하는<br>새로운<span>꿈</span></p>
+                    </div>
+                    <div class="slideBox1">
+                        <img src="images/sec2_4.jpg" alt="">
+                        <p><span>경희</span>에서<br><span>시작</span>하는<br>새로운<span>꿈</span></p>
+                    </div>
+                    <div class="slideBox1">
+                        <img src="images/sec2_5.jpg" alt="">
+                        <p><span>경희</span>에서<br><span>시작</span>하는<br>새로운<span>꿈</span></p>
+                    </div>
+                </li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+                <li>6</li>
+                <li>7</li>
+                <li>8 slide</li>
+            </ul>   
+        </div>
+    </section>
 
 
     
