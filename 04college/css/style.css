@@ -4,7 +4,7 @@ body{font-family: 'Roboto', sans-serif;}
 
 /* header */
 .headerTop{width: 100%;background-color: #990e17;margin: 0 auto;margin-bottom: 20px;}
-.headerTop .headerTopWrap{width: 1190px;margin: 0 auto;}
+.headerTop .headerTopWrap{width: 1200px;margin: 0 auto;}
 
 .headerTop .navbarUtil{float:left;}
 .headerTop .navbarUtil li{float:left;}
@@ -26,14 +26,14 @@ body{font-family: 'Roboto', sans-serif;}
 .navbarMenu img{padding:12px 5px 12px 0;}
 
 .headerMain{width: 100%;margin: 0 auto;margin-bottom: 20px;}
-.headerMainWrap{width: 1190px;margin: 0 auto;position: relative;}
+.headerMainWrap{width: 1200px;margin: 0 auto;position: relative;}
 
 .headerMainWrap h1{float:left;width: 233px;}
 .headerMainWrap h1 img{width: 100%;}
 
 .navbarMain{position: absolute;top:10px;left:calc( 213px + 233px );}
 .navbarMain li{float:left;padding:10px;}
-.navbarMain li a{display:block;color:#000;padding:10px;font-size:18px;font-weight:bold;}
+.navbarMain li a{display:block;color:#000;padding:8px;font-size:18px;font-weight:bold;}
 
 .headerMainWrap>a{position: absolute;right: 0;top: 20px;}
 
@@ -43,7 +43,7 @@ body{font-family: 'Roboto', sans-serif;}
 }
 
 /* sec1 */
-.sectionWrap .sec1Wrap{width: 1190px;height:1310px;margin: 0 auto;}
+.sectionWrap .sec1Wrap{width: 1200px;height:1310px;margin: 0 auto;}
 .sec1Wrap h2{float:left;}
 
 .sec1Wrap li{float:left;}
