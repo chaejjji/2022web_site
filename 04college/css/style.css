@@ -61,14 +61,13 @@ body{font-family: 'Roboto', sans-serif;}
 #section .sec1 li p{color:#fff;display:flex;justify-content:center;align-items:center;}
 #section .sec1 li:last-child{margin-right: 0;}
 
-/* sec2 */
+/* sec2_bxSlider */
 .bx-wrapper {
     width: 900px;height: 450px;float:left;
     -moz-box-shadow: 0 0 0 #ccc;
     -webkit-box-shadow: 0 0 0 #ccc;
     box-shadow: 0 0 0 #ccc;
-    border: 0 solid #fff;
-    background: #fff;
+    border: 0 none;
     position: relative;
     margin-bottom: 0;
     padding: 0;
@@ -89,29 +88,35 @@ body{font-family: 'Roboto', sans-serif;}
 
 .bx-wrapper .bx-pager.bx-default-pager a.active{background:#d64141;}
 
-.slideItem1{width: 100px;}
+/* NEXT & PREV */
+.prev{position: absolute;top: 15%;left: 0;}
+.next{position: absolute;right:300px;top:15%;}
+.sec2{position: relative;}
+.slideItem1{width: 900px;height: 450px;}
 
-.slideItem1>p{display:block;font-size:72px;color:#fff;}
+.slideItem1>.txtWrap{display:block;font-size:70px;color:#fff;position: absolute;top: 50px;left: 95px;}
+.slideItem1>.txtWrap>p{letter-spacing:-0.2em;margin-bottom: 18px;}
+.slideItem1>.txtWrap span{font-weight:bold;}
+.slideItem1>.txtWrap>.btn>a{font-size:14px;font-weight:bold;background-color: #d58888;
+    width: 188px;height: 40px;border-radius:10px;color:#fff;
+    display:flex;justify-content:center;align-items:center;
+}
+
+.slideItem1>.txtWrap>.btn p{margin-right: 10px;}
+.slideItem1>.txtWrap2{display:block;position: absolute;left:50%;top:80%;transform:translate(-50%,-50%);}
+.slideItem1>.txtWrap2>p{font-size:25px;font-weight:bold;color:#fff;}
+
 
 #section .sec2>ul>li{float:left;width: 300px;height: 225px;}
 #section .sec2>ul>li{background-color: white;}
-
-
-
-
-
-
-
 #section .sec2>ul>li:nth-child(2n){background-color: pink;}
 
 
 #section .sec2>ul>li:nth-child(1){width: 900px;height: 450px;}
-#section .sec2>ul>li:nth-child(1)>box1{width: 900px;height: 450px;}
-
 #section .sec2>ul>li:nth-child(2){height: 450px;}
 #section .sec2>ul>li:nth-child(3){}
 #section .sec2>ul>li:nth-child(4){}
 #section .sec2>ul>li:nth-child(5){}
 #section .sec2>ul>li:nth-child(6){}
 #section .sec2>ul>li:nth-child(7){}
-#section .sec2>ul>li:nth-child(8){}
+#section .sec2>ul>li:nth-child(8){width: 900px;}
