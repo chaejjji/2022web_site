@@ -25,14 +25,7 @@
     <!-- bxslider -->
     <script>
         $(document).ready(function(){
-            var slide = $(".slide1").bxSlider({controls:false});
-
-            $(".next").click(function(){
-                slide.goToNextSlide();
-            });
-            $(".prev").click(function(){
-                slide.goToPrevSlide();
-            });
+            var slide = $(".slide1").bxSlider();
 
         });
 
@@ -82,7 +75,7 @@
 
     <!-- section -->
     <section id="section">
-        <div class="sec1 clearfix container">
+        <div class="sec1 container">
             <h2>함께 나누며 세상을 이끌어<br><span>세계로향하는 경희대학교</span></h2>
             <ul class="clearfix">
                 <li>
@@ -138,26 +131,70 @@
                         </div>
                     </div>
 
-                    <div style="background-image:url(images/sec2_5.jpg)" class="slideItem1">
-                    </div>
-
+                    <div style="background-image:url(images/sec2_5.jpg)" class="slideItem1"></div>
                 </li>
-                <!-- NEXT & PREV -->
-                <div class="next">
-                    <img src="images/next.png" alt="">
-                </div>
                 
-                <div class="prev">
-                    <img src="images/prev.png" alt="">
-                </div>
+                <li class="sec3 container" style="background-image:url(images/sec3.png)">
+                    <div class="txtWrap">
+                        <h2>APP으로<br>스마트 도서관<br>바로 이용하자!</h2>
+                        <p>모바일 열람증은<br>도서관 자료실/도서대출 등에<br>사용할 수 있습니다.</p>
+                        <div class="btn">
+                            <a href="#">
+                                <p>자세히 보기</p>
+                                <img src="images/btn.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </li>
 
+                <li class="sec4 container">
+                    <h3><a href="#">HOT LINK</a></h3>
+                    <nav class="Icobar">
+                        <ul class="clearfix">
+                            <li>
+                                <a href="#"><img src="images/sec4_icon1.png" alt=""></a>
+                                <p>국제교류<br>센터</p>
+                            </li>
+                            <li>
+                                <a href="#"><img src="images/sec4_icon2.png" alt=""></a>
+                                <p>원격지원<br>시스템</p>
+                            </li>
+                            <li>
+                                <a href="#"><img src="images/sec4_icon3.png" alt=""></a>
+                                <p>예산/결산<br>공고</p>
+                            </li>
+                        </ul>
+                    </nav>
+                </li>
+
+                <li class="sec5">
+                    <div class="txtWrap">
+                        <h3><a href="#">공지사항</a></h3>
+                    </div>
+                </li>
+
+                <li class="sec6">
+                    <div class="txtWrap">
+                        <h3><a href="#">SNS NEWS</a></h3>
+                        <ul>
+                            <li>
+                                <a href="#"><img src="images/sec6.png" alt=""></a>
+                                <p>2022학년도<br>경희대학교는<br>신입생 입학식을<br>3월 2일(목)...</p>
+                            </li>
+                            <li></li>
+                        </ul>
+                        
+                    </div>
+                </li>
+
+                <li class="sec7">
+                    <a href="#"><img src="images/sec7.png" alt=""></a>
+                </li>
+
+                <li class="sec8" style="background-image:url(images/sec8.png)">
+                    <a href="#"><img src="images/sec8_btn.png" alt=""></a>
+                </li>
                 
-                <li>2</li>
-                <li>3</li>
-                <li>4</li>
-                <li>5</li>
-                <li>6</li>
-                <li>7</li>
                 <li>8 slide</li>
             </ul>   
         </div>
