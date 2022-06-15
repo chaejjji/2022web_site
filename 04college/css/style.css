@@ -47,6 +47,8 @@ body{font-family: 'Roboto', sans-serif;}
 .btn p{margin-right: 10px;}
 #section h3 a{display:block;color:#fff;font-size:25px;margin-bottom: 30px;}
 
+
+
 #section .sec2>ul>li{float:left;width: 300px;height: 225px;}
 #section .sec2>ul>li{background-color: white;}
 #section .sec2>ul>li:nth-child(2n){background-color: pink;}
@@ -120,7 +122,7 @@ body{font-family: 'Roboto', sans-serif;}
 .sec3 .txtWrap>h2{font-size:40px;color:#fff;padding-bottom:20px;letter-spacing:-0.15em;text-shadow: 3px 3px #444;}
 .sec3 .txtWrap>p{font-size:18px;color:#fff;padding-bottom:30px;letter-spacing:-0.15em;text-shadow: 1px 1px #444;}
 .sec3>.txtWrap>.btn a{
-    font-size:14px;font-weight:bold;background-color: #b00000;
+    font-size:14px;font-weight:bold;background-color: rgba(176, 0, 0,0.63);
     width: 188px;height: 40px;border-radius:10px;color:#fff;border: 1px solid #fff;
     display:flex;justify-content:center;align-items:center;
 }
@@ -128,10 +130,10 @@ body{font-family: 'Roboto', sans-serif;}
 /* sec4 */
 #section .sec2>ul>li:nth-child(3){background-color: #990e17;}
 #section .sec4{padding:20px 25px;}
-#section .sec4 .Icobar>ul>li{float:left;padding:0 10px;}
-#section .sec4 .Icobar>ul>li:last-child{padding-right:0;}
-#section .sec4 .Icobar>ul>li>a>img{margin-bottom: 7px;}
-#section .sec4 .Icobar li>p{font-size:14px;color:#fff;font-weight:bold;letter-spacing:-0.01em;
+#section .sec4 .secbar>ul>li{float:left;padding:0 10px;}
+#section .sec4 .secbar>ul>li:last-child{padding-right:0;}
+#section .sec4 .secbar>ul>li>a>img{margin-bottom: 7px;}
+#section .secbar li>p{font-size:14px;color:#fff;font-weight:bold;letter-spacing:-0.01em;
     text-align:center;line-height:19px;
 }
 
@@ -139,25 +141,106 @@ body{font-family: 'Roboto', sans-serif;}
 #section .sec2>ul>li:nth-child(4){background-color: #d64141;}
 #section .sec5{padding:20px 25px;position: relative;}
 #section .sec5:after{content:"";display:block;background-color:#fff;
-    width: 260px;height: 2px;position: absolute;top:65px;left:20px;
+    width: 260px;height: 2px;position: absolute;top:65px;left:20px;margin-bottom: 10px;
 }
+#section .sec5 .notice{font-size:14px;letter-spacing:-0.6px;line-height:19px;}
+
+#section .sec5 .notice p{width: 180px;white-space:nowrap;text-overflow:ellipsis;overflow:hidden;}
+/* TEXT넘칠 때 ...나오게 */
+
+#section .sec5 .notice>li{background-image: url(../images/notice.png);background-repeat:no-repeat;
+    background-position: 0 50%;margin-bottom: 10px;
+}
+#section .sec5 .notice>li>a{text-indent:7px;display:block;color:white;position: relative;}
+#section .sec5 .notice>li span{display:block;position: absolute;right: 0;top: 0;}
 
 /* sec6 */
 #section .sec2>ul>li:nth-child(5){background-color: #d58888;}
 #section .sec6{padding:20px 25px;}
+#section .sec6 .txtWrap{display:flex;margin-bottom: 5px;;}
+#section .sec6 .txtWrap>a>img{margin-right: 25px;}
+#section .sec6 .txtWrap>p{text-align:left;color:#fff;font-size:14px;letter-spacing:-0.01em;line-height:19px;}
+#section .sec6 .IcoWrap{display:block;float:right;}
+#section .sec6 .IcoWrap>ul>li{float:left;margin-right: 5px;}
+#section .sec6 .IcoWrap>ul>li:last-child{margin-right: 0}
+
 
 /* sec7 */
 #section .sec2>ul>li:nth-child(6){}
+#section .sec7{position: relative;overflow:hidden;}
+#section .sec7 img{width: 100%;transition:0.3s;}
+#section .sec7 .txt{width: 100%;height: 100%;position: absolute;top:-85%;
+    background-color: rgba(0,0,0,0.3);transition:0.3s;
+}
+#section .sec7 .txt a{height: 100%;display:flex;justify-content: center;
+    align-items:center;color:#fff;font-size:20px;font-weight:bold;}
 
+#section .sec7:hover .txt{top: 0;}
+#section .sec7:hover img{transform:scale(1.2);}
 
 /* sec8 */
 #section .sec2>ul>li:nth-child(7){background-color: rgba(0, 22, 59,0.7);
-    display:flex;justify-content:center;align-items:center;
+    display:flex;justify-content:center;align-items:center;overflow:hidden;transition:0.3s;
 }
 #section .sec8{background-position:center;background-repeat:no-repeat;cursor:pointer;}
+#section .sec8 img{transition:0.3s;box-shadow:0 0 10px rgba(153, 14, 23,0.3)}
+#section .sec8:hover img{transform:scale(1.2)}
 
-
-
-
-
+/* sec9 */
 #section .sec2>ul>li:nth-child(8){width: 900px;}
+
+/* sec9_bxSlider */
+#section .sec9 .bx-wrapper {
+    width: 900px;height: 225px;float: left;
+    -moz-box-shadow: 0 0 0 #ccc;
+    -webkit-box-shadow: 0 0 0 #ccc;
+    box-shadow: 0 0 0 #ccc;
+    border: 0 none;
+    position: relative;
+    margin-bottom: 0;
+    padding: 0;
+    *zoom: 1;
+    -ms-touch-action: pan-y;
+    touch-action: pan-y;
+}
+
+#section .sec9 .bx-wrapper .bx-pager{top:-5%;right:-45%;}
+
+#section .sec9 .bx-wrapper .bx-pager.bx-default-pager a:hover,
+#section .sec9 .bx-wrapper .bx-pager.bx-default-pager a:active,
+#section .sec9 .bx-wrapper .bx-pager.bx-default-pager a:focus{background: #535353;}
+
+#section .sec9 .bx-wrapper .bx-pager.bx-default-pager a:hover,
+#section .sec9 .bx-wrapper .bx-pager.bx-default-pager a:active,
+#section .sec9 .bx-wrapper .bx-pager.bx-default-pager a:focus{background: #990e17;}
+
+#section .sec9 .bx-wrapper .bx-pager.bx-default-pager a.active{background:#990e17;}
+
+#section .sec9 .bx-viewport{width: 900px;height: 225px;}
+.slideItem2{width: 900px;height: 225px;position: relative;}
+.sec9 ul li{float:left;position: relative;}
+#section .sec9 .txtWrap{display:block;font-size:35px;color:#490106;
+    position: absolute;left:40px;top:40px;
+}
+#section .sec9 .txtWrap>p{letter-spacing:-0.15em;}
+#section .sec9 .txtWrap span{font-size:60px;font-weight:bold;}
+.slideItem2>.txtWrap>.btn>a{
+    font-size:14px;font-weight:bold;background-color: rgba(241, 65, 65,0.8);
+    width: 188px;height: 40px;border-radius:10px;color:#fff;border: 1px solid #fff;
+    display:flex;justify-content:center;align-items:center;
+}
+
+#section .sec9 .txtWrap2{font-size:30px;color:#fff;text-shadow: 3px 3px #333;
+    display:flex;justify-content;align-items:center;
+}
+
+#section .sec9 .txtWrap2 p{margin-bottom: 25px;}
+#section .sec9 .txtWrap2 span{font-weight:bold;font-size:35px;}
+#section .sec9 .txtWrap2 .txtBar{display:block;width: 900px;
+    background-color: rgba(0,0,0,0.3);
+}
+.sec9 
+
+
+
+

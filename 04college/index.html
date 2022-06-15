@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -25,13 +26,18 @@
     <!-- bxslider -->
     <script>
         $(document).ready(function(){
-            var slide = $(".slide1").bxSlider();
+            $(".slide1").bxSlider();
+
+            $(".slide2").bxSlider({
+                controls:false,auto:true
+            });
 
         });
 
     </script>
 
 </head>
+
 <body>
 
     <!-- header -->
@@ -110,13 +116,11 @@
                             </div>
                         </div>
                     </div>
-
                     <div style="background-image:url(images/sec2_2.jpg)" class="slideItem1">
                         <div class="txtWrap2">
                             <p>"KHYSS는 세계적 학자로의 성장 관문"</p>
                         </div>
                     </div>
-
                     <div style="background-image:url(images/sec2_3.jpg)" class="slideItem1">
                         <div class="txtWrap">
                             <p>
@@ -124,16 +128,15 @@
                             </p>
                         </div>
                     </div>
-
                     <div style="background-image:url(images/sec2_4.jpg)" class="slideItem1">
                         <div class="txtWrap2">
                             <p> 새로운 발광 현상 <span>'무아레 무늬'</span> 최초 발견 </p>
                         </div>
                     </div>
-
                     <div style="background-image:url(images/sec2_5.jpg)" class="slideItem1"></div>
                 </li>
-                
+
+
                 <li class="sec3 container" style="background-image:url(images/sec3.png)">
                     <div class="txtWrap">
                         <h2>APP으로<br>스마트 도서관<br>바로 이용하자!</h2>
@@ -149,7 +152,7 @@
 
                 <li class="sec4 container">
                     <h3><a href="#">HOT LINK</a></h3>
-                    <nav class="Icobar">
+                    <nav class="secbar">
                         <ul class="clearfix">
                             <li>
                                 <a href="#"><img src="images/sec4_icon1.png" alt=""></a>
@@ -170,37 +173,92 @@
                 <li class="sec5">
                     <div class="txtWrap">
                         <h3><a href="#">공지사항</a></h3>
+                        <ul class="notice">
+                            <li><a href="#">
+                                    <p>[추천채용] 하계인턴(IB 운용 HIIIIIIIII</p><span>2022-06-09</span>
+                                </a></li>
+                            <li><a href="#">
+                                    <p>[추천채용] 하계인턴(IB 운용 HIIIIIIIII</p><span>2022-06-09</span>
+                                </a></li>
+                            <li><a href="#">
+                                    <p>[추천채용] 하계인턴(IB 운용 HIIIIIIIII</p><span>2022-06-09</span>
+                                </a></li>
+                            <li><a href="#">
+                                    <p>[추천채용] 하계인턴(IB 운용 HIIIIIIIII</p><span>2022-06-09</span>
+                                </a></li>
+                        </ul>
                     </div>
                 </li>
 
                 <li class="sec6">
-                    <div class="txtWrap">
-                        <h3><a href="#">SNS NEWS</a></h3>
-                        <ul>
-                            <li>
-                                <a href="#"><img src="images/sec6.png" alt=""></a>
-                                <p>2022학년도<br>경희대학교는<br>신입생 입학식을<br>3월 2일(목)...</p>
-                            </li>
-                            <li></li>
-                        </ul>
-                        
+                    <h3><a href="#">SNS NEWS</a></h3>
+                    <div class="secWrap clearfix">
+                        <div class="txtWrap">
+                            <a href="#"><img src="images/sec6.png" alt=""></a>
+                            <p>2022학년도<br>경희대학교는<br>신입생 입학식을<br>3월 2일(목) ...</p>
+                        </div>
+                        <div class="IcoWrap">
+                            <ul>
+                                <li><a href="#"><img src="images/Layer 9.png" alt=""></a></li>
+                                <li><a href="#"><img src="images/Layer 10.png" alt=""></a></li>
+                                <li><a href="#"><img src="images/Layer 11.png" alt=""></a></li>
+                                <li><a href="#"><img src="images/Layer 12.png" alt=""></a></li>
+                            </ul>
+                        </div>
                     </div>
                 </li>
 
                 <li class="sec7">
                     <a href="#"><img src="images/sec7.png" alt=""></a>
+                    <div class="txt">
+                        <a href="#">3년 만에 열린 대동제</a>
+                    </div>
                 </li>
 
-                <li class="sec8" style="background-image:url(images/sec8.png)">
+                <li class="sec8 container" style="background-image:url(images/sec8.png)">
                     <a href="#"><img src="images/sec8_btn.png" alt=""></a>
                 </li>
-                
-                <li>8 slide</li>
-            </ul>   
+
+                <li class="sec9">
+                    <div class="slideWrap">
+                        <ul class="slide2 clearfix">
+                            <li class="slideItem2">
+                                <img src="images/sec9_1.jpg" alt="">
+                                <div class="txtWrap">
+                                    <p>2022년 신·편입생 2차 모집<br><span>2022.7.1 ~ 7.10</span></p>
+                                    <div class="btn">
+                                        <a href="#">
+                                            <p>자세히 보기</p>
+                                            <img src="images/btn.png" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="slideItem2">
+                                <img src="images/sec9_2.jpg" alt="">
+                                <div class="txtWrap2">
+                                    <p>전환시대, <span>새 희망을 찾아서</span></p>
+                                    <div class="txtBar">
+                                        <p>영상 보기</p>                                            
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="slideItem2">
+                                <img src="images/sec9_3.jpg" alt="">
+                                <p>새로운 미래를 여는 경희대학교</p>
+                            </li>
+                        </ul>
+
+                    </div>
+                </li>
+            </ul>
         </div>
     </section>
 
 
-    
+
 </body>
+
 </html>
