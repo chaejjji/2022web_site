@@ -18,10 +18,12 @@
     <!-- CSS -->
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/jquery.bxslider.css">
+    <link rel="stylesheet" href="css/colorbox.css">
     <link rel="stylesheet" href="css/style.css">
 
     <script src="js/jquery-3.1.1.min.js"></script>
     <script src="js/jquery.bxslider.js"></script>
+    <script src="js/jquery.colorbox-min.js"></script>
 
     <!-- bxslider -->
     <script>
@@ -32,7 +34,12 @@
                 controls:false,auto:true
             });
 
+            $(".youtube").colorbox({
+                iframe:true,innerWidth:700,innerHeight:394
+            })
+
         });
+
 
     </script>
 
@@ -215,8 +222,8 @@
                     </div>
                 </li>
 
-                <li class="sec8 container" style="background-image:url(images/sec8.png)">
-                    <a href="#"><img src="images/sec8_btn.png" alt=""></a>
+                <li class="sec8" style="background-image:url(images/sec8.png)">
+                    <a href="https://www.youtube.com/embed/HVtaPPU-rFA" class="youtube" title="73세 경희는 꾸준히 성장중"><img src="images/sec8_btn.png" alt=""></a>
                 </li>
 
                 <li class="sec9">
@@ -240,7 +247,7 @@
                                 <div class="txtWrap2">
                                     <p>전환시대, <span>새 희망을 찾아서</span></p>
                                     <div class="btn">
-                                        <a href="#">
+                                        <a href="https://www.youtube.com/embed/y4nOLKOsDCg" class="youtube" title="경희대학교 Review 2021">
                                             <p>영상 보기</p>
                                         </a>
                                     </div>
