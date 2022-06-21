@@ -83,9 +83,9 @@
 .topMenu .secbar li a{display:block;text-align:center;line-height:40px;}
 
 .sec4Wrap .card-body{background-color: #fff;width: 360px;height: 466px;transition:0.4s;
-    display:flex;flex-direction:column;z-index:10;overflow:hidden;z-index:100;
+    display:flex;flex-direction:column;overflow:hidden;
 }
-.swiper-slide .card-body .txtWrap{display:block;padding:32px;height: 466px;
+.swiper-slide .card-body .txtWrap{display:block;padding:25px;height: 466px;
     text-overflow:ellipsis;word-wrap:break-word;margin-bottom: 25px;
 }
 .sec4Wrap .card-body h3{font-size:21px;font-weight:bold;text-overflow:ellipsis;word-wrap:break-word;}
@@ -101,8 +101,7 @@
 
 /* Swiper */
 .swiper{width: 100%;height: 100%;}
-.swiperWrap{width: 1280px;transition:0.4s;}
-
+.swiperWrap{transition:0.4s;}
 .sec4Wrap .swiper-slide:hover .card-body{transform:translate(0,-20px);
     box-shadow: 15px 15px 15px 0 rgba(0,0,0,0.2);cursor:pointer;border-radius:5px;
 }
