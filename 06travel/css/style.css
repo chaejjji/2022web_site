@@ -3,7 +3,8 @@
 /* common */
 html, body{height: 100%;}
 body{font-family: 'Noto Sans KR', sans-serif;}
-.container{width: 980px;margin: 0 auto;position: relative;}
+.container{width: 980px;margin: 0 auto;position: relative;margin-bottom: 15px;}
+:hover.b_hover{border-radius:10px;transform:translateY(-5px);box-shadow:5px 5px 5px rgba(0,0,0,0.4)}
 
 /* header */
 #header{width: 100%;margin: 0 auto;background-color: #FFC72C;
@@ -80,7 +81,7 @@ p.title{line-height:14px;left:14px;font-weight:bold;}
 
 /* sec1 */
 .sec1{display: flex;justify-content: center;align-items: center;height: 557px;
-    position: relative;margin-bottom: 15px;}
+    position: relative;}
 .sec1 .sec1Wrap{position: absolute;left: 0;margin-right: 40px;}
 .sec1Wrap .secForm{width: 482px;height: 300px;background-color: #fff;margin-bottom: 15px;}
 .sec1Wrap .tripWrap{width: 482px;height: 242px;position: relative;}
@@ -89,8 +90,6 @@ p.title{line-height:14px;left:14px;font-weight:bold;}
 .sec1Wrap .tripWrap>.box ul{display: flex;justify-content: center;align-items: center;}
 .sec1Wrap .tripWrap>.box li{width: 236px;height: 242px;background-color: #fff;
     margin-right: 12px;overflow:hidden;transition:0.3s;}
-
-.sec1Wrap .tripWrap>.box li:hover{border-radius:10px;transform:translateY(-5px);}
 
 .sec1Wrap .tripWrap>.box li:last-child{margin-right: 0;}
 
@@ -111,18 +110,19 @@ p.title{line-height:14px;left:14px;font-weight:bold;}
     position: absolute;background-color: #FFC72C;transform:translate(76px,26px) rotate(-45deg)
 }
 
-/* ballon */
-.bal1{position: absolute;right: -50px;top:0;
+/* animation */
+.bal1{position: absolute;right: 0px;top:60px;transform:scale(0.6);
     animation-name:ballon1;
-    animation-duration:2s;
+    animation-duration:1.5s;
     animation-iteration-count:infinite;
     animation-direction:alternate;
     animation-timing-function:linear;
 }
 @keyframes ballon1 {
     from{}
-    to{transform:translateY(100px)}
+    to{transform:translateY(80px) scale(0.6)}
 }
+
 
 .air1{position: absolute;left: -200px;top:400px;transform:rotate(-45deg) scale(0.1);
     animation:airplane1 5s infinite ease-in
@@ -133,15 +133,49 @@ p.title{line-height:14px;left:14px;font-weight:bold;}
     to{transform:translate(500%,-500%)}
 }
 
-.air2{position: absolute;left:280px;top:390px;transform:rotate(5deg);
-    animation:airplane2 6s infinite forwards linear
+.air2{position: absolute;left:280px;top:280px;transform:rotate(30deg);
+    animation:airplane2 5s infinite forwards ease-out
 }
 
 @keyframes airplane2 {
     from{}
-    to{transform:translateX(600%)}
+    to{transform:translate(600%,600%) rotate(3deg)}
     
 }
+
+.bal2{position: absolute;top: -50px;right:-90px;
+    transform:scale(0.2) rotate(30deg);
+    animation: ballon2 1s infinite alternate linear
+}
+
+@keyframes ballon2 {
+    from{}
+    to{transform:scale(0.2) rotate(-30deg)}
+    
+}
+
+.balhouse{position: absolute;bottom: -200px;left:100px;
+    transform:rotate(30deg);
+    animation: balhouse 4s infinite alternate ease-in;
+}
+
+@keyframes balhouse {
+    from{}
+    to{transform:translate(-500%,-500%) scale(0.3)}
+    
+}
+
+.air3{position: absolute;bottom:-150px;right: -180px;
+    transform:rotate(-5deg) translateX(0);
+    animation:airplane3 4s infinite forwards ease-in
+}
+
+@keyframes airplane3 {
+    from{}
+    to{transform:translateX(-1000%) rotate(-5deg)}
+    
+}
+
 
 /* sec2 */
 .sec2 li{width: 236px;height: 242px;margin-right: 12px;float:left;overflow:hidden;}
@@ -150,13 +184,50 @@ p.title{line-height:14px;left:14px;font-weight:bold;}
 .swiper-slide{position: relative;width: 236px;height: 242px;}
 .swiper-slide>img{width: 100%;height: 100%;}
 .swiper-button-prev:after,
-.swiper-button-next:after{color: #0064c2;transition:0.3s;
-    position: absolute;left:auto;right:0;
-}
+.swiper-button-next:after{color: #0064c2;transition:0.3s;}
 .swiper-button-prev:hover,
-.swiper-button-next:hover{transform:scale(1.2);background-color: rgba(0,0,0,0.2);}
+.swiper-button-next:hover{transform:scale(1.1);background-color: rgba(255,255,255,0.7);
+    border-radius:5px;box-shadow:2px 2px 2px rgba(0,0,0,0.5)
+}
 
 .sec2 p{width: 100%;height: 100%;;background-color: rgb(1, 39, 75,0.8);
-    transform:translateY(-25%);color:#fff;font-size:14px;font-weight:400;padding:10px;
+    transform:translateY(-25%);color:#fff;font-size:14px;font-weight:400;padding:10px 20px;
 }
-.swiper-slide p span{color:#FFC72C;font-size:16px;}
+.swiper-slide p span{color:#ffc72c;font-size:16px;}
+
+.sec2 .hshop{display: flex;justify-content: center;align-items: center;
+    background-color: #eee;position: relative;}
+.sec2 .hshop p{background-color:initial;text-align:center;font-size:16px;
+    color:#6400b2;font-weight:500;
+    display:inline-block;text-align:center;line-height:16px;
+    border: 2px solid #888;border-radius:10px;width: 160px;height: 15px;
+    position: absolute;bottom: 10px;transition:0.2s;
+}
+.sec2 .hshop p:hover{background-color: #6400b2;color:#fff;border: 0 none;
+    box-shadow:0 2px 0 rgba(0,0,0,0.3)}
+
+.sec2 .hshop .hshopWrap{display: flex;flex-direction: column;align-items: center;}
+.sec2 .hlogo{width: 50%;height: 50%;margin-top:-25px;}
+.sec2 .htrip{transform:scale(0.7);border-radius:50%;margin-top: -15px;}
+
+.sec2 .txtWrap{position: relative;}
+.sec2 .txtWrap h3{font-size:18px;position: absolute;padding:20px;line-height:30px;position: absolute;
+    text-shadow:0 2px 2px rgba(0,0,0,0.3);
+}
+.sec2 .txtWrap h3>span{font-size:14px;color:#888;text-shadow:none;
+    position: absolute;left: 20px;bottom: -30px;}
+
+.sec2 .review{transition:0.3s;}
+.sec2 .review p{background-color: rgba(255, 199, 44, 0.8);}
+
+/* sec3 */
+.sec3 li{width: 236px;height: 242px;margin-right: 12px;float:left;
+    position: relative;overflow:hidden;box-shadow:5px 5px 5px rgba(0,0,0,0.5);
+}
+.sec3 li:last-child{margin-right: 0}
+
+.sec3 li>a>img{width: 100%;height: 100%;position: absolute;}
+.sec3 li .txtWrap{position: absolute;
+}
+.sec3 .title>img{display:inline;width: 50%;height: 50%;}
+
