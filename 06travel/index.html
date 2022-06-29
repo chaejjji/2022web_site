@@ -22,23 +22,24 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.2.4/swiper-bundle.min.js" integrity="sha512-Hvn3pvXhhG39kmZ8ue3K8hw8obT4rfLXHE5n+IWNCMkR6oV3cfkQNUQqVvX3fNJO/JtFeo/MfLmqp5bqAT+8qg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.2.4/swiper-bundle.css" integrity="sha512-303pOWiYlJMbneUN488MYlBISx7PqX8Lo/lllysH56eKO8nWIMEMGRHvkZzfXYrHj4j4j5NtBuWmgPnkLlzFCg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <!-- bxslider -->
-    <script src="js/jquery-3.1.1.min.js"></script>
-    <script src="js/jquery.bxslider.js"></script>
-
     <!-- datepicker -->
     <link rel="stylesheet" href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
 
-
     <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/jquery.bxslider.css">
     <link rel="stylesheet" href="css/style.css">
+
+    <!-- bxslider -->
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <link rel="stylesheet" href="css/jquery.bxslider.css">
+    
 
     <script>
         $(document).ready(function(){
-            $(".slide").bxSlider();
+            $(".slide").bxSlider({
+            });
         })
     </script>
 
@@ -169,9 +170,9 @@
 
             <div class="sec1Wrap">
                 <div class="secForm">
-                    <div class="slideWrap slide">
-                        <ul>
-                            <li>
+                    <div class="slideWrap">
+                        <ul class="slide clearfix">
+                            <li class="slideItem">
                                 <form action="#">
                                     <fieldset>
                                         <legend class="blind">여행일정</legend>
@@ -221,7 +222,8 @@
                                     </button>
                                 </form>
                             </li>
-                            <li>
+
+                            <li class="slideItem">
                                 <form action="#">
                                     <fieldset>
                                         <legend class="blind">여행일정</legend>
@@ -266,12 +268,18 @@
                                             </div>
                                         </div>
                                     </fieldset>
-                                    <button>
-                                        <i class="fa-solid fa-magnifying-glass"></i> 검색하기
+                                    <button type="text" class="btn">
+                                        <i class="fa-solid fa-magnifying-glass"></i>&nbsp;&nbsp;검색하기
                                     </button>
                                 </form>
                             </li>
                         </ul>
+                        <div class="slideTap">
+                            <a href="#" data-slide-index="0"></a>
+                            <a href="#" data-slide-index="0"></a>
+                            <a href="#" data-slide-index="0"></a>
+                            <a href="#" data-slide-index="0"></a>
+                        </div>
                     </div>
                 </div>
 
