@@ -2,7 +2,7 @@
 
 /* common */
 html, body{height: 100%;}
-body{font-family: 'Noto Sans KR', sans-serif;}
+body{font-family: 'Noto Sans KR', sans-serif;overflow-x: hidden;}
 .container{width: 980px;margin: 0 auto;position: relative;}
 :hover.b_hover{border-radius:10px;transform:translateY(-5px);box-shadow:5px 5px 5px rgba(0,0,0,0.4)}
 
@@ -69,11 +69,10 @@ p.title{line-height:14px;left:14px;font-weight:bold;}
 }
 
 
-
 /* section */
 #section{
     min-width:1280px;padding:50px 0;
-    background-image: url(../images/01배경.png);
+    background-image: url(../images/01배경.jpg);
     background-repeat: no-repeat;
     background-position:center;
     background-size:cover;
@@ -193,7 +192,7 @@ p.title{line-height:14px;left:14px;font-weight:bold;}
     display: flex;}
 .slideTap{left: 0;position: absolute;top: 0;height: 100%;width: 140px;}
 .slideTap a{display: flex;justify-content: center;align-items: center;height:calc( 100% / 4 );
-    background-color:#FFC72C;color:#fff;text-shadow:2px 2px 2px rgba(0,0,0,0.2);font-size:16px;
+    background-color:#ffc72c;color:#fff;text-shadow:2px 2px 2px rgba(0,0,0,0.2);font-size:16px;
 }
 .slideTap a.active{background-color: #eee; color:#0064c2;font-weight:700;}
 fieldset{border: 0 none;margin-bottom: 15px;}
@@ -266,30 +265,122 @@ button:hover{background-color: #fff;color:#0064c2;border: 2px solid #aaa;}
 .sec2 .review p{background-color: rgba(255, 199, 44, 0.8);}
 
 /* sec3 */
-.sec3 li{width: 235px;height: 242px;margin-right: 12px;float:left;
-    position: relative;overflow:hidden;border-radius:5px;
+.sec3 li{width: 229px;height: 242px;margin-right: 12px;float:left;
+    position: relative;overflow:hidden;border-radius:5px;border: 3px solid #888;
 }
-.sec3 a:hover .air4{animation: airplane4 1s infinite alternate forwards linear}
+.sec3 li:last-child{margin-right: 0;}
+.sec3 .air4{opacity:0.4}
+
+.sec3 li{transition:0.3s;}
+.sec3 li:hover{border: 0 none;}
+
+.sec3 .item1:hover{width: 235px;background-color:rgba(255, 199, 44,0.2)}
+
+.sec3 .item1:hover .txtWrap,
+.sec3 .item4:hover .txtWrap{background-color:rgba(255, 199, 44,0)}
+
+.sec3 .item1:hover .fa-solid.fa-circle-plus,
+.sec3 .item4:hover .fa-solid.fa-circle-plus{transform:rotate(-45deg);color:#FFC72C;}
+
+.sec3 .item1:hover .air4{animation: airplane4 1s alternate forwards linear}
 
 @keyframes airplane4 {
     from{}
-    to{transform:translate(-40%,-10%)}
+    to{transform:translate(-40%,-10%);opacity:1;}
+}
+
+
+.sec3 li .txtWrap{width:100%;height: 100%;position: absolute;
+    background-color:rgba(255, 199, 44,0.5);font-weight:500;
+    z-index:10;align-items: center;}
+.sec3 li .title{display: flex;justify-content: center;align-items: center;
+    padding:50px 0;
+}
+.sec3 li .title img{transform:scale(0.5);position:absolute;left:40px;}
+
+.sec3 li .txtWrap h4{font-size:20px;position: absolute;left: 100px;top:35px;}
+.sec3 li .txtWrap i{font-size:45px;position: absolute;left:40%;transition:0.3s;}
+.sec3 li .txtWrap p{width: 100%;display:block;font-weight:500;position: absolute;
+    font-size:18px;left:10px;bottom:60px;text-shadow:2px 2px 2px rgba(0,0,0,0.3);font-weight:500;
+}
+.sec3 .item1 span{padding-top:5px;right:20px;position: absolute;color:#f04e23}
+
+.sec3 .item2,
+.sec3 .item3{border: 3px solid #eee;}
+
+.sec3 figure{width: 229px;height: 242px;transition:0.3s;}
+
+.sec3 .item2 img{width: 100%;height: 100%;}
+.sec3 .item2:hover .stinson,
+.sec3 .item3:hover .hotel{transform:scale(1.2);}
+.sec3 .item3:hover .hotel{transform-origin:left top}
+
+.sec3 .item2:hover .fa-solid.fa-circle-plus,
+.sec3 .item3:hover .fa-solid.fa-circle-plus{transform:rotate(-45deg);color:#0064c2;}
+.sec3 .item2 .title{font-size:20px;}
+
+.sec3 .item2 .fa-solid.fa-utensils{left:-35px;top:-3px;font-size:36px;}
+
+.sec3 .item2:hover .txtWrap,
+.sec3 .item3:hover .txtWrap{background-color:rgba(0, 100, 194,0)}
+
+.sec3 .item2 .txtWrap{background-color:rgba(0, 100, 194,0.7);color:#fff;}
+.sec3 .item3 .txtWrap{background-color:rgba(0, 100, 194,0.5);color:#fff;}
+
+.sec3 .item2>a>.txtWrap p{font-size:16px;position: absolute;bottom:20px;
+    left:15px;text-shadow:2px 2px 2px rgba(0,0,0,0.3)}
+
+.sec3 .item3>a>.txtWrap p{font-size:16px;position: absolute;bottom:30px;left:-2px;text-align:center;
+    text-shadow:2px 2px 2px rgba(0,0,0,0.3)}
+
+.sec3 .hotel,
+.sec3 .horse{width: 100% ;height: 100%;transition:0.3s;}
+
+.sec3 .item4:hover .horse{animation:horse 1s infinite alternate forwards linear}
+@keyframes horse {
+    from{}
+    to{transform:scale(1.1) translate(-3%,-3%)}
     
 }
-.sec3 li:last-child{margin-right: 0;}
+.sec3 .item4 .fa-solid.fa-keyboard{left:-50px;top:-3px;font-size:34px;color:#333;}
+.sec3 .item4 .title>h4{left:95px;}
+.sec3 .item4 .txtWrap>p{font-size:16px;position: absolute;bottom:15px;
+    left:5px;text-align:center;}
 
-
-.sec3 li .txtWrap{width: 235px;height: 242px;position: absolute;
-    background-color:rgba(255, 199, 44,0.5);linear-gradient(90deg, #F6D365 0%, #FDA085 100%
-    z-index:10;
+/* calendar */
+#ui-datepicker-div{font-family: 'Jua', sans-serif;}
+.ui-widget-header{
+    border: 0 none;
+    background:none;
+    color: #333333;
+    font-weight: bold;
 }
-.sec3 li .txtWrap .title{
-    display: flex;align-items: center;
-    width: 235px;height: 50px;padding:15px 0;
+.ui-widget-header a {
+    color: #fff;
 }
-.sec3 li .txtWrap img{transform:scale(0.5);position:absolute;left:50px;}
-.sec3 li .txtWrap h4{font-size:16px;position: absolute;left: 110px;}
-.sec3 li .txtWrap p{position: absolute;left:2px;font-size:14px;}
 
+.ui-state-highlight, .ui-widget-content .ui-state-highlight{
+    border: 3px solid #f04e23;
+    background: none;
+    color: #333;
+}
 
+.ui-state-default, .ui-widget-content .ui-state-default{
+    border: 0 none;
+    background: none;
+    font-weight: normal;
+    color: #333;
+}
 
+.ui-state-active, .ui-widget-content .ui-state-active{
+    border: 3px solid #f04e23;
+    background: none;
+    color: #333;
+}
+
+.ui-datepicker td a{
+    text-align:center;
+}
+/* footer */
+.footer{background-color: #444;display: block;}
+.footerWrap{color: #fff;font-size:12px;font-weight:initial;position: relative;}
