@@ -2,7 +2,7 @@
 
 /* common */
 html, body{height: 100%;}
-body{font-family: 'Noto Sans KR', sans-serif;overflow-x: hidden;}
+body{font-family: 'Noto Sans KR', sans-serif;overflow-x: hidden;min-height:100vh;}
 .container{width: 980px;margin: 0 auto;position: relative;}
 :hover.b_hover{border-radius:10px;transform:translateY(-5px);box-shadow:5px 5px 5px rgba(0,0,0,0.4)}
 
@@ -37,7 +37,7 @@ body{font-family: 'Noto Sans KR', sans-serif;overflow-x: hidden;}
     display: flex;justify-content: center;align-items:center;color:#f5f5f5;font-size:16px;}
 .headerMain .navMain>ul>li>a:hover{color:#FFC72C;}
 .headerMain .navMain>ul>.menu6>a{color:#f00;transition:0.3s;}
-.headerMain .navMain>ul>.menu6>a:hover{color:#f00;font-weight:600;}
+.headerMain .navMain>ul>.menu6>a:hover{color:#f00;font-weight:700;}
 
 
 /* submenu */
@@ -46,7 +46,7 @@ body{font-family: 'Noto Sans KR', sans-serif;overflow-x: hidden;}
     border-radius:0 0 5px 5px;transition:0.3s;transform:translateY(15px);
 }
 .submenu li{transition:0.3s;padding:5px 0;}
-.submenu li:hover a{transform:scale(1.1);}
+.submenu li:hover{font-weight:700;background-color: #eee;}
 .submenu>ul>li>a{display: flex;justify-content: center;align-items: center;
     font-size:14px;transition:0.3s;
 }
@@ -176,6 +176,25 @@ p.title{line-height:14px;left:14px;font-weight:bold;}
     
 }
 
+.bal3{position: absolute;transform:scale(0.5) rotate(30deg);right:calc( 20% - 150px );bottom:-50%;
+    animation:ballon3 infinite 4s linear
+}
+
+@keyframes ballon3 {
+    from{}
+    to{transform:translate(100%,-100%) scale(0.1);opacity:0;}
+    
+}
+
+.bal4{position: absolute;left:calc( -40% + 70px );bottom:-100%;transform:scale(0.8);
+    animation:ballon4 infinite 6s forwards linear;opacity:0
+}
+
+@keyframes ballon4 {
+    from{}
+    to{transform:translateY(-300%) scale(0.8);opacity:1}
+}
+
 /* bxSlider */
 .slideWrap{width: 482px;height: 300px;position:relative;display: flex;background-color: #eee;}
 .slideWrap .bx-wrapper {
@@ -272,9 +291,9 @@ button:hover{background-color: #fff;color:#0064c2;border: 2px solid #aaa;}
 .sec3 .air4{opacity:0.4}
 
 .sec3 li{transition:0.3s;}
-.sec3 li:hover{border: 0 none;}
+.sec3 li:hover{transform:scale(1.2);z-index:100;}
 
-.sec3 .item1:hover{width: 235px;background-color:rgba(255, 199, 44,0.2)}
+.sec3 .item1:hover{background-color:rgba(255, 199, 44,0.2)}
 
 .sec3 .item1:hover .txtWrap,
 .sec3 .item4:hover .txtWrap{background-color:rgba(255, 199, 44,0)}
@@ -347,7 +366,8 @@ button:hover{background-color: #fff;color:#0064c2;border: 2px solid #aaa;}
 .sec3 .item4 .txtWrap>p{font-size:16px;position: absolute;bottom:15px;
     left:5px;text-align:center;}
 
-/* calendar */
+
+/* calendar Style*/
 #ui-datepicker-div{font-family: 'Jua', sans-serif;}
 .ui-widget-header{
     border: 0 none;
@@ -382,5 +402,51 @@ button:hover{background-color: #fff;color:#0064c2;border: 2px solid #aaa;}
     text-align:center;
 }
 /* footer */
-.footer{background-color: #444;display: block;}
-.footerWrap{color: #fff;font-size:12px;font-weight:initial;position: relative;}
+#footer{background-color: #444;position: relative;}
+#footer .footerWrap{color: #fff;
+    display: block;
+}
+
+#footer h1{padding:20px 0;display: flex;}
+.navFoot{width: 600px;position: absolute;top: 65px;padding:20px 0;}
+.navFoot ul{display: flex;justify-content:space-between;align-items: center;}
+.navFoot li{position: relative;}
+.navFoot li:after{content:"";display: block;width: 2px;height: 12px;background-color: #ddd;
+    position: absolute;top: 9px;right:-14px;
+}
+.navFoot li:last-child:after{display:none;}
+.navFoot a{color:#fff;font-size:12px;}
+.navFoot li:hover a{color:#ccc;}
+#footer .txtWrap p{padding:40px 0;font-size:12px;}
+
+#footer .btn{width: 150px;height: 40px;position: absolute;right: 0;border-radius:20px;transition:.3s;background-color: #fff;
+    border: 0 none;
+}
+#footer .btn:hover{background-color: #FFC72C;}
+#footer .btn a{display:flex;justify-content: center;align-items: center;color:#333;}
+#footer img{margin-right: 10px;}
+
+/* sub01 */
+.contents{height: 1000px;}
+
+.contents{
+    background:#eee;
+}
+
+.contents.subpage .visual{
+    display: flex;justify-content: center;align-items: center;
+    height: 200px;
+    background-image:url(../images/panorama-g1997b99d0_1920.jpg);
+    background-repeat:no-repeat;
+    background-position:center;
+    text-align:center;
+
+}
+
+.contents .txtWrap{font-size:30px;padding:20px 0;color:#fff}
+.contents p{font-size:20px;}
+
+.contents.subpage .section{
+    background-image:url()
+}
+
