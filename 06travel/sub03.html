@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>노랑풍선 [여행을 가볍게]</title>
+
+    <!-- fabicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="images/ico_yb.ico">
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">    
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+     integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+     crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- swiper -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.2.4/swiper-bundle.min.js" integrity="sha512-Hvn3pvXhhG39kmZ8ue3K8hw8obT4rfLXHE5n+IWNCMkR6oV3cfkQNUQqVvX3fNJO/JtFeo/MfLmqp5bqAT+8qg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.2.4/swiper-bundle.css" integrity="sha512-303pOWiYlJMbneUN488MYlBISx7PqX8Lo/lllysH56eKO8nWIMEMGRHvkZzfXYrHj4j4j5NtBuWmgPnkLlzFCg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- datepicker -->
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+
+    <!-- bxslider -->
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <link rel="stylesheet" href="css/jquery.bxslider.css">
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/cssgram/0.1.10/cssgram.min.css">
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+    <script>
+        $(document).ready(function(){
+            $(".slide").bxSlider({
+                controls:false,
+                pagerCustom:".slideTap",
+                touchEnabled:false,
+                infiniteLoop:false,
+                // auto:true,
+                // autoHover:true,
+            });
+        })
+    </script>
+
+
+</head>
+<body>
+
+    <!-- header -->
+    <header id="header">
+    
+        <div class="headerTopWrap container">
+            <h1><a href="#"><img src="images/logo.jpg" alt=""></a></h1>
+            <div class="headerForm">
+                <form action="#">
+                    <input type="text" name="search" placeholder="검색어를 입력하세요." class="inp">
+                </form>
+                <p class="title">SEARCH</p>
+                <div class="icon">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+            </div>
+    
+            <div class="IcoWrap">
+                <ul>
+                    <li class="number">+82 0212345678</li>
+                    <li class="Icon"><a href="#"><img src="images/btn_fnb_sns1.jpg" alt=""></a></li>
+                    <li class="Icon"><a href="#"><img src="images/btn_fnb_sns2.jpg" alt=""></a></li>
+                    <li class="Icon"><a href="#"><img src="images/btn_fnb_sns3.jpg" alt=""></a></li>
+                    <li class="Icon"><a href="#"><img src="images/btn_fnb_sns4.jpg" alt=""></a></li>
+                    <li class="Icon"><a href="#"><img src="images/btn_fnb_sns5.jpg" alt=""></a></li>
+                    <li class="Icon"><a href="#"><img src="images/btn_fnb_sns6.jpg" alt=""></a></li>
+                </ul>
+            </div>
+        </div>
+    
+        <div class="headerMainWrap">
+            <div class="headerMain container">
+                <nav class="navMain">
+                    <ul class="clearfix">
+                        <li>
+                            <a href="sub01.html">해외패키지</a>
+                            <div class="submenu">
+                                <ul>
+                                    <li><a href="#">유럽</a></li>
+                                    <li><a href="#">괌/사이판</a></li>
+                                    <li><a href="#">하와이/미국/캐나다</a></li>
+                                    <li><a href="#">동남아</a></li>
+                                    <li><a href="#">홍콩/마카오/대만</a></li>
+                                    <li><a href="#">호주/뉴질랜드</a></li>
+                                    <li><a href="#">일본</a></li>
+                                    <li><a href="#">중국</a></li>
+                                    <li><a href="#">중앙아시아/몽골</a></li>
+                                    <li><a href="#">부산 출발</a></li>
+                                </ul>
+                            </div>
+        
+                        </li>
+
+                        <li>
+                            <a href="sub02.html">국내여행</a>
+                            <div class="submenu">
+                                <ul>
+                                    <li><a href="#">제주도</a></li>
+                                    <li><a href="#">내륙/섬</a></li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li>
+                            <a href="sub03.html">허니문/골프</a>
+                            <div class="submenu">
+                                <ul>
+                                    <li><a href="#">허니문</a></li>
+                                    <li><a href="#">골프</a></li>
+                                </ul>
+                            </div>
+
+                        </li>
+
+                        <li>
+                            <a href="sub04.html">에어텔</a>
+                            <div class="submenu">
+                                <ul>
+                                    <li><a href="#">유럽</a></li>
+                                    <li><a href="#">동남아/몰디브</a></li>
+                                    <li><a href="#">몽골</a></li>
+                                    <li><a href="#">호주</a></li>
+                                </ul>
+                            </div>
+
+                        </li>
+
+                        <li>
+                            <a href="sub05.html">프리미엄</a>
+                            <div class="submenu">
+                                <ul>
+                                    <li><a href="#">미주/하와이/칸쿤</a></li>
+                                    <li><a href="#">유럽</a></li>
+                                    <li><a href="#">동남아</a></li>
+                                    <li><a href="#">국내</a></li>
+                                    <li><a href="#">홍콩/마카오/대만</a></li>
+                                    <li><a href="#">중국</a></li>
+                                    <li><a href="#">일본</a></li>
+                                </ul>
+                            </div>
+
+                        </li>
+                        <li class="menu6">
+                            <a href="#"><img src="images/ico_global.jpg" alt="">국가별입국정보</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- section -->
+    <div class="contents subpage honeymoon">
+        <div class="visual">
+            <div class="txtWrap container">
+                <h5>허니문/골프</h5>
+                <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+        </div>
+        <div class="section">
+            <img src="images/sub03.PNG" alt="">
+        </div>
+    </div>
+    
+    
+    <!-- footer -->
+    <footer id="footer">
+        <div class="footerWrap container">
+            <h1><a href="#"><img src="images/logo.jpg" alt=""></a></h1>
+            <div class="footMenu">
+                <nav class="navFoot">
+                    <ul>
+                        <li><a href="#">회사소개</a></li>
+                        <li><a href="#">개인정보처리방침</a></li>
+                        <li><a href="#">이용약관</a></li>
+                        <li><a href="#">여행약관</a></li>
+                        <li><a href="#">여행자보험</a></li>
+                        <li><a href="#">대리점안내</a></li>
+                        <li><a href="#">신문광고</a></li>
+                        <li><a href="#">오시는 길</a></li>
+                    </ul>
+                </nav>
+                <div class="btn">
+                    <a href="#">
+                        <img src="images/ico_fnb_ctr.jpg" alt="">
+                        <p>고객센터</p>
+                    </a>
+                </div>
+            </div>
+    
+            <div class="txtWrap">
+                <p>
+                    (주)노랑풍선 서울특별시 중구 수표로31, 노랑풍선빌딩<br>
+                    대표번호 1544-2288<br>
+                    ⓒYellow Balloon tour.All Rights Reserved.
+                </p>
+            </div>
+    
+    
+    
+        </div>
+    </footer>
+    </body>
+    
+    </html>

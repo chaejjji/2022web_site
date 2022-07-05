@@ -2,9 +2,10 @@
 
 /* common */
 html, body{height: 100%;}
-body{font-family: 'Noto Sans KR', sans-serif;overflow-x: hidden;min-height:100vh;}
+body{font-family: 'Noto Sans KR', sans-serif;overflow-x: hidden;}
 .container{width: 980px;margin: 0 auto;position: relative;}
 :hover.b_hover{border-radius:10px;transform:translateY(-5px);box-shadow:5px 5px 5px rgba(0,0,0,0.4)}
+.py-5{padding: 3em 0 !important;}
 
 /* header */
 #header{width: 100%;margin: 0 auto;background-color: #FFC72C;
@@ -41,12 +42,12 @@ body{font-family: 'Noto Sans KR', sans-serif;overflow-x: hidden;min-height:100vh
 
 
 /* submenu */
-.submenu{visibility:hidden;opacity:0;padding:8px 0;
+.submenu{visibility:hidden;opacity:0;padding-top:5px;
     background-color: rgba(100, 149, 237, 0.8);color:#222;font-weight:500;
     border-radius:0 0 5px 5px;transition:0.3s;transform:translateY(15px);
 }
-.submenu li{transition:0.3s;padding:5px 0;}
-.submenu li:hover{font-weight:700;background-color: #eee;}
+.submenu li{transition:0.3s;padding:5px 0;display:block;}
+.submenu li:hover{font-weight:700;background-color: #fff;}
 .submenu>ul>li>a{display: flex;justify-content: center;align-items: center;
     font-size:14px;transition:0.3s;
 }
@@ -427,26 +428,52 @@ button:hover{background-color: #fff;color:#0064c2;border: 2px solid #aaa;}
 #footer img{margin-right: 10px;}
 
 /* sub01 */
-.contents{height: 1000px;}
+.contents{width: 100%;background:#eee;}
 
-.contents{
-    background:#eee;
-}
 
 .contents.subpage .visual{
-    display: flex;justify-content: center;align-items: center;
-    height: 200px;
-    background-image:url(../images/panorama-g1997b99d0_1920.jpg);
     background-repeat:no-repeat;
     background-position:center;
+    background-size:cover;
     text-align:center;
+    margin: 0 auto;
 
 }
 
-.contents .txtWrap{font-size:30px;padding:20px 0;color:#fff}
+.contents.abroad .visual{background-image:url(../images/panorama-g1997b99d0_1920.jpg)}
+
+.contents.subpage .txtWrap{display:block;font-size:40px;color:#fff;
+    padding:50px 0 60px 0;text-shadow:2px 2px 2px rgba(0,0,0,0.3);
+}
 .contents p{font-size:20px;}
 
 .contents.subpage .section{
-    background-image:url()
+    margin-top: -30px;
+
+}
+
+.contents.subpage .section img{margin: 0 auto;border-top:4px solid #FFC72C;border-radius:2px;
+    border-bottom:4px solid #FFC72C;
+}
+
+/* sub02 */
+
+.contents.domestic .visual{
+    background-image:url(../images/korea-g9cfc35099_1280.jpg);
+}
+
+/* sub03 */
+.contents.honeymoon .visual{
+    background-image:url(../images/hawaii-g7b9186289_1280.jpg);
+}
+
+/* sub04 */
+.contents.airtel .visual{
+    background-image:url(../images/hot-air-balloon-gb218a2eab_1280.jpg);
+}
+
+/* sub05 */
+.contents.premium .visual{
+    background-image:url(../images/aurora-g856f38341_1920.jpg);
 }
 
