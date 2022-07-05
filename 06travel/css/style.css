@@ -6,6 +6,7 @@ body{font-family: 'Noto Sans KR', sans-serif;overflow-x: hidden;}
 .container{width: 980px;margin: 0 auto;position: relative;}
 :hover.b_hover{border-radius:10px;transform:translateY(-5px);box-shadow:5px 5px 5px rgba(0,0,0,0.4)}
 .py-5{padding: 3em 0 !important;}
+.actmenu.active{background-color: #fff;color:#FFC72C;}
 
 /* header */
 #header{width: 100%;margin: 0 auto;background-color: #FFC72C;

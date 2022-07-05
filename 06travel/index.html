@@ -88,7 +88,7 @@
             <div class="headerMain container">
                 <nav class="navMain">
                     <ul class="clearfix">
-                        <li>
+                        <li class="actmenu">
                             <a href="sub01.html">해외패키지</a>
                             <div class="submenu">
                                 <ul>
@@ -107,7 +107,7 @@
         
                         </li>
 
-                        <li>
+                        <li class="actmenu">
                             <a href="sub02.html">국내여행</a>
                             <div class="submenu">
                                 <ul>
@@ -117,7 +117,7 @@
                             </div>
                         </li>
 
-                        <li>
+                        <li class="actmenu">
                             <a href="sub03.html">허니문/골프</a>
                             <div class="submenu">
                                 <ul>
@@ -128,7 +128,7 @@
 
                         </li>
 
-                        <li>
+                        <li class="actmenu">
                             <a href="sub04.html">에어텔</a>
                             <div class="submenu">
                                 <ul>
@@ -141,7 +141,7 @@
 
                         </li>
 
-                        <li>
+                        <li class="actmenu">
                             <a href="sub05.html">프리미엄</a>
                             <div class="submenu">
                                 <ul>
@@ -629,5 +629,11 @@
 
         </div>
     </footer>
+
+    <script>
+        document.querySelector(".actmenu").addEventListener("click",function(){
+            document.querySelector(".actmenu").classList.add("active");
+        })
+    </script>
 </body>
 </html>
