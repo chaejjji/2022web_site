@@ -88,8 +88,8 @@
             <div class="headerMain container">
                 <nav class="navMain">
                     <ul class="clearfix">
-                        <li class="actmenu">
-                            <a href="sub01.html">해외패키지</a>
+                        <li>
+                            <div class="actMenu"><a href="sub01.html">해외패키지</a></div>
                             <div class="submenu">
                                 <ul>
                                     <li><a href="#">유럽</a></li>
@@ -107,8 +107,8 @@
         
                         </li>
 
-                        <li class="actmenu">
-                            <a href="sub02.html">국내여행</a>
+                        <li>
+                            <div class="actMenu"><a href="sub02.html">국내여행</a></div>
                             <div class="submenu">
                                 <ul>
                                     <li><a href="#">제주도</a></li>
@@ -117,8 +117,8 @@
                             </div>
                         </li>
 
-                        <li class="actmenu">
-                            <a href="sub03.html">허니문/골프</a>
+                        <li>
+                            <div class="actMenu"><a href="sub03.html">허니문/골프</a></div>
                             <div class="submenu">
                                 <ul>
                                     <li><a href="#">허니문</a></li>
@@ -128,8 +128,8 @@
 
                         </li>
 
-                        <li class="actmenu">
-                            <a href="sub04.html">에어텔</a>
+                        <li>
+                            <div class="actMenu"><a href="sub04.html">에어텔</a></div>
                             <div class="submenu">
                                 <ul>
                                     <li><a href="#">유럽</a></li>
@@ -141,8 +141,8 @@
 
                         </li>
 
-                        <li class="actmenu">
-                            <a href="sub05.html">프리미엄</a>
+                        <li>
+                            <div class="actMenu"><a href="sub05.html">프리미엄</a></div>
                             <div class="submenu">
                                 <ul>
                                     <li><a href="#">미주/하와이/칸쿤</a></li>
@@ -157,7 +157,7 @@
 
                         </li>
                         <li class="menu6">
-                            <a href="#"><img src="images/ico_global.jpg" alt="">국가별입국정보</a>
+                            <div class="actMenu"><a href="#"><img src="images/ico_global.jpg" alt="">국가별입국정보</a></div>
                         </li>
                     </ul>
                 </nav>
@@ -630,10 +630,31 @@
         </div>
     </footer>
 
+    
     <script>
-        document.querySelector(".actmenu").addEventListener("click",function(){
-            document.querySelector(".actmenu").classList.add("active");
+        const menuElem = document.querySelector("div.actMenu");
+        const boxElem = document.querySelector(".actMenu");
+
+        menuElem.addEventListener("click", function () {
+        menuElem.classList.add("active")
         })
+
+
+
+        // function clickStyle(){
+        //     menuElem.style.backgroundColor = "white";
+        //     menuElem.style.color = "#002950";
+        //     menuElem.style.fontWeight = "700";
+        // }
+
+        // function clickInit(){
+        //     menuElem.style.backgroundColor = "#00498c";
+        //     menuElem.style.color = "#f5f5f5";
+        //     menuElem.style.fontWeight = "400";
+        // }
+
+        // clickInit();
     </script>
+
 </body>
 </html>
