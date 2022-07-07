@@ -9,7 +9,7 @@ body{font-family: 'Noto Sans KR', sans-serif;overflow-x: hidden;}
 /* .active{background-color: #fff;color:#002950;} */
 
 /* header */
-#header{width: 100%;margin: 0 auto;background-color: #FFC72C;
+#header{width: 100%;margin: 0 auto;background-color: #FFC72C; 
     position: relative;min-width:1280px;z-index:100;
 }
 #header .headerTopWrap{position:relative;display: flex;justify-content:space-between;}
@@ -433,6 +433,7 @@ button:hover{background-color: #fff;color:#0064c2;border: 2px solid #aaa;}
 
 
 .contents.subpage .visual{
+    min-width:1280px;
     background-repeat:no-repeat;
     background-position:center;
     background-size:cover;
