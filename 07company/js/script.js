@@ -31,3 +31,12 @@ $(".navbarClone>ul>li>a").click(function(e){
         $(this).addClass("active");
     }
 })
+
+// dom
+// $(".dom").hover(function(){
+//     $(this).addClass("on")
+// },function(){
+//     $(this).removeClass("on")
+// })
+
+
