@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,13 +13,35 @@
     <!-- font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet">  
 
+    <link rel="stylesheet" href="css/jquery.bxslider.css">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+
+    <script>
+        $(function () {
+            let slide = $(".slider").bxSlider({
+                mode: "fade",
+                controls: false,
+                auto:true
+            });
+
+            $(".next").click(function () {
+                slide.goToNextSlide();
+            });
+            $(".prev").click(function () {
+                slide.goToPrevSlide();
+            });
+
+            // let slide2 = $(".slide").bxSlider({});
+        })
+    </script>
 </head>
+
 <body>
     <header id="header">
         <div class="navbarWrap container">
@@ -26,8 +49,8 @@
             <nav class="navbar">
                 <ul>
                     <li class="menu">
-                        <a href="#" class="menu">브랜드</a>
-                        
+                        <a href="#" class="mainMenu">브랜드</a>
+
                         <ul class="submenu">
                             <li><a href="#">브랜드 소개</a></li>
                             <li><a href="#">브랜드 소식</a></li>
@@ -37,7 +60,7 @@
                         <div class="aBar"></div>
                     </li>
 
-                    <li><a href="#" class="menu">매장</a>
+                    <li><a href="#" class="mainMenu">매장</a>
                         <ul class="submenu">
                             <li><a href="#">오프라인 STORE</a></li>
                             <li><a href="#">가맹점 개설 안내</a></li>
@@ -46,7 +69,7 @@
                         <div class="aBar"></div>
                     </li>
 
-                    <li><a href="#">메뉴</a>
+                    <li><a href="#" class="mainMenu">메뉴</a>
                         <ul class="submenu">
                             <li><a href="#">도넛</a></li>
                             <li><a href="#">커피&음료</a></li>
@@ -56,11 +79,11 @@
                         <div class="aBar"></div>
                     </li>
 
-                    <li><a href="#">영양정보 및 알레르기</a>
+                    <li><a href="#" class="mainMenu">영양정보</a>
                         <div class="aBar"></div>
                     </li>
 
-                    <li><a href="#">이벤트</a>
+                    <li><a href="#" class="mainMenu">이벤트</a>
                         <ul class="submenu">
                             <li><a href="#">진행중인 이벤트</a></li>
                             <li><a href="#">당첨자 발표</a></li>
@@ -78,7 +101,7 @@
         </div>
         <div class="overlay"></div>
         <div class="navbarClone">
-            <ul>
+            <ul class="mMenu">
                 <div class="btn">
                     <button>로그인</button>
                     <button>회원가입</button>
@@ -106,7 +129,7 @@
                         <li><a href="#">OTHERS</a></li>
                     </ul>
                 </li>
-                <li><a href="#">영양정보 및 알레르기</a></li>
+                <li><a href="#">영양정보</a></li>
                 <li><a href="#">이벤트 <i class="fa-solid fa-angle-down"></i></a>
                     <ul class="tsubmenu">
                         <li><a href="#">진행중인 이벤트</a></li>
@@ -128,15 +151,16 @@
                 </ul>
             </div>
             <div class="mMenu"></div>
-            
+
         </div>
     </header>
 
-
     <div class="visualWrap">
-        slide
+        <ul class="slide">
+            <li class="slideItem1">
+            </li>
+        </ul>
     </div>
-
 
     <section class="contents">
         <div class="sectionWrap container">
@@ -147,18 +171,67 @@
                         <h3>브랜드소개</h3>
                     </div>
                 </li>
-                <li>2</li>
+                <li>
+                    <ul class="slider">
+                        <li class="sItems">
+                            <div class="itemWrap">
+                                <div class="sTxt">
+                                    <div class="txt">
+                                        <h3>EVENT</h3>
+                                        <p>1.2만원 이상 구매 시, 피카츄/파이리 우산 5,900원!</p>
+                                    </div>
+                                </div>
+                                <div class="sImg"><img src="images/1649291031.jpg" alt=""></div>
+                            </div>
+                        </li>
+                        <li class="sItems">
+                            <div class="itemWrap">
+                                <div class="sTxt">
+                                    <div class="txt">
+                                        <h3>EVENT</h3>
+                                        <p>대용량으로 시원하게 즐기는 킹 사이즈 아이스 아메리카노!</p>
+                                    </div>
+                                </div>
+                                <div class="sImg"><img src="images/1673050864.jpg" alt=""></div>
+                            </div>
+                        </li>
+
+                        <li class="sItems">
+                            <div class="itemWrap">
+                                <div class="sTxt">
+                                    <div class="txt">
+                                        <h3>EVENT</h3>
+                                        <p>매주 금요일 페이머스 글레이즈드팩 6개입 6,900원, 12개입 12,900원!</p>
+                                    </div>
+                                </div>
+                                <div class="sImg"><img src="images/1641708827.jpg" alt=""></div>
+                            </div>
+                        </li>
+
+                    </ul>
+                    <div class="sBtn">
+                        <div class="prev"><img src="images/Frame 33.png" alt=""></div>
+                        <div class="next"><img src="images/Frame 32.png" alt=""></div>
+                    </div>
+                </li>
                 <li>
                     <div>
                         <a href="#"><img src="images/Frame 12.png" alt=""></a>
                     </div>
                 </li>
-                <li>
+                <li class="dom">
                     <h3>이달의 도넛</h3>
-                    <div class="dom">
-                        <a href="#"><img src="images/Rectangle 23.png" alt=""></a>
-                        <a href="#"><img src="images/1717664609.png" alt=""></a>
+                    <!-- <div class="dom"> -->
+                    <a href="#"><img src="images/Rectangle 23.png" alt=""></a>
+                    <a href="#"><img src="images/1717664609.png" alt=""></a>
+                    <div class="tDom">
+                        <a href="#">
+                            <h3>알로와 나시와<br>코코넛 파라다이스</h3>
+                            <p>고소하고 바삭한 식감의 코코넛 토핑과 상큼한 파인애플 필링이 조화로운 도넛</p>
+                            <div class="dBtn">MORE</div>
+                        </a>
                     </div>
+                    <!-- </div> -->
                 </li>
                 <li class="tcon">
                     <a href="#">
@@ -187,6 +260,8 @@
         </div>
     </section>
 
-<script src="js/script.js"></script>
+    <script src="js/script.js"></script>
+  
 </body>
+
 </html>
