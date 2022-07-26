@@ -32,6 +32,11 @@ $(".navbarClone>ul>li>a").click(function(e){
     }
 })
 
+// colorbox
+$(".youtube").colorbox({
+    iframe:true,innerWidth:700,innerHeight:394
+})
+
 // dom
 // $(".dom").hover(function(){
 //     $(this).addClass("on")

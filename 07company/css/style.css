@@ -12,7 +12,7 @@ body{font-family: 'Nanum Gothic', sans-serif;}
 
 /* header  */
 #header{position:fixed;width: 100%;z-index:10;
-    /* box-shadow: 0 0 10px rgba(0,0,0,.5); */
+    box-shadow: 0 0 10px rgba(0,0,0,.5);
 }
 #header h1{padding:10px;}
 
@@ -43,7 +43,7 @@ body{font-family: 'Nanum Gothic', sans-serif;}
 .navbar>ul>li.on {color:#F26922}
 .navbar>ul>li.on .submenu{transform:translateY(-8px);opacity: 1;visibility: visible;}
 .navbar>ul>li.on .aBar{transform:scale(1)}
-.navbar>ul>li.on .mainMenu{color:#F26922}
+.navbar>ul>li.on .mainMenu{color:#F26922;text-shadow:0 3px 3px rgba(0,0,0,.3)}
 
 
 .toggle{
@@ -84,14 +84,33 @@ button{width: 100px;height: 40px;background-color:#E5478C;border: 0 none;
 .mMenu{margin-bottom: 100px;}
 
 /* visual_slide */
-.visualWrap{height: 100vh;position: relative;
-    background-image: url(../images/mainimg01.jpg);
+.visualWrap{width: 100vw;
+    /* background-image: url(../images/mainimg01.jpg); */
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-
 }
+.visualWrap li>a>img{width: 100%;height: 100%;}
+.visualWrap .bx-wrapper{margin-bottom: 0;}
+.visualWrap .bx-wrapper .bx-pager{
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+}
+.bx-wrapper .bx-pager {
+    text-align: center;
+    font-size: .85em;
+    font-family: Arial;
+    font-weight: bold;
+    color: #998E86;
+    padding-top: 20px;
+}
+.bx-wrapper .bx-pager.bx-default-pager a:hover, .bx-wrapper .bx-pager.bx-default-pager a.active, .bx-wrapper .bx-pager.bx-default-pager a:focus {
+    background: #F26922;
+}
+
 /* contents */
+
 section{background: #998E86;width: 100%;}
 .sectionWrap>ul{display: flex;flex-wrap:wrap;position: relative;}
 .sectionWrap>ul>li{
@@ -138,6 +157,15 @@ section{background: #998E86;width: 100%;}
     background-image: url(../images/Group\ 1.png);
     
 }
+.play:hover img{
+    animation:play 1s alternate infinite forwards linear
+}
+
+@keyframes play {
+    from{}
+    to{transform:rotate(-30deg) scale(1.3)}
+    
+}
 
 .sectionWrap>ul>li:nth-child(5){background-image: url(../images/Group\ 2.png);}
 .sectionWrap>ul>li:nth-child(6){background-image: url(../images/Rectangle\ 20.png);}
@@ -163,7 +191,7 @@ section{background: #998E86;width: 100%;}
 
 @keyframes donut{
     from{}
-    to{transform:translateX(310px);}
+    to{transform:translateX(100%);}
 }
 
 
@@ -197,10 +225,14 @@ section{background: #998E86;width: 100%;}
 .sectionWrap>ul>li:nth-child(4) img{width: 100%;height: 100%;}
 
 .tcon img{transform:scale(0.8)}
-.tcon p{color:#eee;font-size:24px;font-weight:800;height: 150px;
-    display: flex;flex-direction:column;justify-content:center;line-height:30px;
+.tcon p{color:#eee;font-size:24px;font-weight:800;height: 150px;text-shadow:0 5px 5px rgba(0,0,0,.4);
+    display: flex;flex-direction:column;justify-content:center;line-height:40px;
 }
-.tcon p span{color:#eee;font-size:20px;font-weight:700;line-height:30px;}
+.tcon p span{margin-top: 10px;color:#eee;font-size:20px;font-weight:700;line-height:30px;}
+
+/* .sectionWrap>ul>li>a:hover h3{transform:translateY(-10px);text-shadow:0 0 10px rgba(0,0,0,.2)} */
+
+.why>a>p{font-size:24px;color:#eee;font-weight:800;line-height:38px;transform:translate(-50px,-200%)}
 
 
 /********** css responsive  **********/
@@ -215,15 +247,14 @@ section{background: #998E86;width: 100%;}
     .sectionWrap>ul>li:nth-child(3){order:2}
     .sectionWrap>ul>li:nth-child(8){order:3}
     .sectionWrap>ul>li:nth-child(9){order:4}
+    .sectionWrap>ul>li:nth-child(2){order:5}
+    .sectionWrap>ul>li:nth-child(5){order:6}
+    .sectionWrap>ul>li:nth-child(7){order:7}
+    .sectionWrap>ul>li:nth-child(10){order:8}
     .sectionWrap>ul>li:nth-child(9){position:initial;}
 
-    /* .sectionWrap>ul>li:nth-child(2),
-    .sectionWrap>ul>li:nth-child(3),
-    .sectionWrap>ul>li:nth-child(4),
-    .sectionWrap>ul>li:nth-child(5),
     .sectionWrap>ul>li:nth-child(6),
-    .sectionWrap>ul>li:nth-child(7),
-    .sectionWrap>ul>li:nth-child(10){display:none;} */
+    .sectionWrap>ul>li:nth-child(4){display:none;}
 
     .sItems .sTxt,.sItems .sImg{flex-grow:1}
     .sItems .sImg{position: relative;}

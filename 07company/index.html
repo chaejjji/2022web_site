@@ -16,11 +16,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet">  
 
     <link rel="stylesheet" href="css/jquery.bxslider.css">
+    <link rel="stylesheet" href="css/colorbox.css">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="js/jquery.bxslider.js"></script>
+    <script src="js/jquery.colorbox-min.js"></script>
 
     <script>
         $(function () {
@@ -37,7 +39,8 @@
                 slide.goToPrevSlide();
             });
 
-            // let slide2 = $(".slide").bxSlider({});
+
+            let slide2 = $(".slide").bxSlider({});
         })
     </script>
 </head>
@@ -157,7 +160,17 @@
 
     <div class="visualWrap">
         <ul class="slide">
-            <li class="slideItem1">
+            <li class="slideItem">
+                <a href="#"><img src="images/1641531450.png" alt=""></a>
+            </li>
+            <li class="slideItem">
+                <a href="#"><img src="images/1644107321.jpg" alt=""></a>
+            </li>
+            <li class="slideItem">
+                <a href="#"><img src="images/1688722092.png" alt=""></a>
+            </li>
+            <li class="slideItem">
+                <a href="#"><img src="images/1580951826.png" alt=""></a>
             </li>
         </ul>
     </div>
@@ -166,10 +179,12 @@
         <div class="sectionWrap container">
             <ul>
                 <li>
-                    <div>
-                        <img src="images/1586682806 1.png" alt="">
-                        <h3>브랜드소개</h3>
-                    </div>
+                    <a href="#">
+                        <div class="mCon">
+                            <img src="images/1586682806 1.png" alt="">
+                            <h3>브랜드소개</h3>
+                        </div>
+                    </a>
                 </li>
                 <li>
                     <ul class="slider">
@@ -214,14 +229,13 @@
                         <div class="next"><img src="images/Frame 32.png" alt=""></div>
                     </div>
                 </li>
+
                 <li class="play">
-                    <div>
-                        <a href="#"><img src="images/Frame 12.png" alt=""></a>
-                    </div>
+                    <a href="https://www.youtube.com/embed/tDL8F-q9dO4" class="youtube" title=""><img src="images/Frame 12.png" alt=""></a>
                 </li>
+
                 <li class="dom">
                     <h3>이달의 도넛</h3>
-                    <!-- <div class="dom"> -->
                     <a href="#"><img src="images/Rectangle 23.png" alt=""></a>
                     <a href="#"><img src="images/1717664609.png" alt=""></a>
                     <div class="tDom">
@@ -231,7 +245,7 @@
                             <div class="dBtn">MORE</div>
                         </a>
                     </div>
-                    <!-- </div> -->
+
                 </li>
                 <li class="tcon">
                     <a href="#">
@@ -241,19 +255,36 @@
                         </div>
                     </a>
                 </li>
-                <li>6</li>
-                <li>7</li>
-                <li>
-                    <div>
-                        <img src="images/1586682806 1 (1).png" alt="">
-                        <h3>창업문의</h3>
-                    </div>
+                <li class="why">
+                    <a href="#">
+                        <p>WHY<br>DUNKIN?</p>
+                    </a>
+
                 </li>
                 <li>
-                    <div>
-                        <img src="images/1586682806 1 (2).png" alt="">
-                        <h3>해피오더 서비스</h3>
-                    </div>
+                    <a href="#">
+                        <div>
+                            <img src="" alt="">
+                            <p>고객과의 약속<br><span>던킨이 전하는 고객과의 약속</span></p>
+                        </div>
+                    </a>
+
+                </li>
+                <li>
+                    <a href="#">
+                        <div>
+                            <img src="images/1586682806 1 (1).png" alt="">
+                            <h3>창업문의</h3>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div>
+                            <img src="images/1586682806 1 (2).png" alt="">
+                            <h3>해피오더 서비스</h3>
+                        </div>
+                    </a>
                 </li>
                 <li>10</li>
             </ul>
