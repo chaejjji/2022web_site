@@ -37,6 +37,20 @@ $(".youtube").colorbox({
     iframe:true,innerWidth:700,innerHeight:394
 })
 
+// swiper
+var swiper = new Swiper(".mySwiper", {
+    loop:true,
+    pagination: {
+      el: ".swiper-pagination",
+      type: "progressbar",
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+
+
 // dom
 // $(".dom").hover(function(){
 //     $(this).addClass("on")
