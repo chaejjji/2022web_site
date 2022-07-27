@@ -10,10 +10,18 @@
     <!-- fabicon -->
     <link rel="shortcut icon" href="images/favicon (1).ico">
 
+    <!-- filter -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/cssgram/0.1.10/cssgram.min.css">
+
     <!-- font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet">  
+
+    <!-- swiper -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.2.4/swiper-bundle.min.js" integrity="sha512-Hvn3pvXhhG39kmZ8ue3K8hw8obT4rfLXHE5n+IWNCMkR6oV3cfkQNUQqVvX3fNJO/JtFeo/MfLmqp5bqAT+8qg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.2.4/swiper-bundle.css" integrity="sha512-303pOWiYlJMbneUN488MYlBISx7PqX8Lo/lllysH56eKO8nWIMEMGRHvkZzfXYrHj4j4j5NtBuWmgPnkLlzFCg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
 
     <link rel="stylesheet" href="css/jquery.bxslider.css">
     <link rel="stylesheet" href="css/colorbox.css">
@@ -38,9 +46,6 @@
             $(".prev").click(function () {
                 slide.goToPrevSlide();
             });
-
-
-            let slide2 = $(".slide").bxSlider({});
         })
     </script>
 </head>
@@ -159,20 +164,26 @@
     </header>
 
     <div class="visualWrap">
-        <ul class="slide">
-            <li class="slideItem">
-                <a href="#"><img src="images/1641531450.png" alt=""></a>
-            </li>
-            <li class="slideItem">
-                <a href="#"><img src="images/1644107321.jpg" alt=""></a>
-            </li>
-            <li class="slideItem">
-                <a href="#"><img src="images/1688722092.png" alt=""></a>
-            </li>
-            <li class="slideItem">
-                <a href="#"><img src="images/1580951826.png" alt=""></a>
-            </li>
-        </ul>
+        <!-- Swiper -->
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <a href="#"><img src="images/1641531450.png" alt=""></a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#"><img src="images/1644107321.jpg" alt=""></a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#"><img src="images/1688722092.png" alt=""></a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#"><img src="images/1580951826.png" alt=""></a>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
     </div>
 
     <section class="contents">
@@ -222,6 +233,18 @@
                                 <div class="sImg"><img src="images/1641708827.jpg" alt=""></div>
                             </div>
                         </li>
+                        
+                        <li class="sItems">
+                            <div class="itemWrap">
+                                <div class="sTxt">
+                                    <div class="txt">
+                                        <h3>EVENT</h3>
+                                        <p>향이 풍부한 커피,<br>던킨 디카페인</p>
+                                    </div>
+                                </div>
+                                <div class="sImg"><img src="images/1677898471.jpg" alt=""></div>
+                            </div>
+                        </li>
 
                     </ul>
                     <div class="sBtn">
@@ -231,7 +254,7 @@
                 </li>
 
                 <li class="play">
-                    <a href="https://www.youtube.com/embed/tDL8F-q9dO4" class="youtube" title=""><img src="images/Frame 12.png" alt=""></a>
+                    <a href="https://www.youtube.com/embed/tDL8F-q9dO4" class="youtube" title=""><img src="images/Frame 12 (2).png" alt=""></a>
                 </li>
 
                 <li class="dom">
@@ -261,11 +284,11 @@
                     </a>
 
                 </li>
-                <li>
+                <li class="tcon">
                     <a href="#">
                         <div>
-                            <img src="" alt="">
                             <p>고객과의 약속<br><span>던킨이 전하는 고객과의 약속</span></p>
+                            <img src="images/pinky-promise-g7dd4314bf_1280 1.png" alt="">
                         </div>
                     </a>
 
@@ -286,10 +309,66 @@
                         </div>
                     </a>
                 </li>
-                <li>10</li>
+                <li class="tcon10">
+                    <a href="#">
+                        <div>
+                            <img src="images/gnb_doc03 1 (1).png" alt="">
+                            <p>생산센터 투어<br><span>던킨 생산센터 둘러보기</span></p>
+                        </div>
+                    </a>
+                </li>
             </ul>
         </div>
     </section>
+
+    <section id="background1">
+        <h2>잠깐의 여유와 <br><span>달콤한 행복</span></h2>
+    </section>
+
+    <section class="MENU">
+        <h2>DUNKIN DONUTS'S MENU</h2>
+        <div class="MENUWrap">
+            <ul>
+                <li>
+                    <a href="#"><img src="images/img_product_1.png" alt="">
+                        <p>도넛</p>
+                        <div class="btn">
+                            <p>도넛 메뉴 보기</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#"><img src="images/img_product_2.png" alt="">
+                        <p>커피&음료</p>
+                        <div class="btn">
+                            <p>커피&음료 메뉴 보기</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#"><img src="images/img_product_3.png" alt="">
+                        <p>샌드위치</p>
+                        <div class="btn">
+                            <p>샌드위치 메뉴 보기</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#"><img src="images/img_product_5.png" alt="">
+                        <p>OTHERS</p>
+                        <div class="btn">
+                            <p>기타 메뉴 보기</p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="background2">
+        <h2>잠깐의 여유와 <br><span>달콤한 행복</span></h2>
+    </section>
+
 
     <script src="js/script.js"></script>
   
