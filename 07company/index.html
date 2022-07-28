@@ -25,12 +25,16 @@
 
     <link rel="stylesheet" href="css/jquery.bxslider.css">
     <link rel="stylesheet" href="css/colorbox.css">
+    <link rel="stylesheet" href="css/animate.css">
+
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="js/jquery.bxslider.js"></script>
     <script src="js/jquery.colorbox-min.js"></script>
+    <script src="js/wow.min.js"></script>
 
     <script>
         $(function () {
@@ -47,6 +51,9 @@
                 slide.goToPrevSlide();
             });
         })
+
+        new WOW().init();
+
     </script>
 </head>
 
@@ -257,7 +264,7 @@
                     <a href="https://www.youtube.com/embed/tDL8F-q9dO4" class="youtube" title=""><img src="images/Frame 12 (2).png" alt=""></a>
                 </li>
 
-                <li class="dom">
+                <li class="dom wow fadeInLeftBig">
                     <h3>이달의 도넛</h3>
                     <a href="#"><img src="images/Rectangle 23.png" alt=""></a>
                     <a href="#"><img src="images/1717664609.png" alt=""></a>
@@ -270,7 +277,7 @@
                     </div>
 
                 </li>
-                <li class="tcon">
+                <li class="tcon wow fadeInRightBig">
                     <a href="#">
                         <div>
                             <img src="images/donuts-g41dd6e58a_1280 1 (1).png" alt="">
@@ -278,22 +285,22 @@
                         </div>
                     </a>
                 </li>
-                <li class="why">
+                <li class="why wow fadeInUpBig">
                     <a href="#">
                         <p>WHY<br>DUNKIN?</p>
                     </a>
 
                 </li>
-                <li class="tcon">
+                <li class="tcon wow pulse">
                     <a href="#">
-                        <div>
+                        <div class="tcon7">
                             <p>고객과의 약속<br><span>던킨이 전하는 고객과의 약속</span></p>
                             <img src="images/pinky-promise-g7dd4314bf_1280 1.png" alt="">
                         </div>
                     </a>
 
                 </li>
-                <li>
+                <li class="wow fadeInRightBig">
                     <a href="#">
                         <div>
                             <img src="images/1586682806 1 (1).png" alt="">
@@ -301,7 +308,7 @@
                         </div>
                     </a>
                 </li>
-                <li>
+                <li class="wow fadeInLeftBig">
                     <a href="#">
                         <div>
                             <img src="images/1586682806 1 (2).png" alt="">
@@ -309,7 +316,7 @@
                         </div>
                     </a>
                 </li>
-                <li class="tcon10">
+                <li class="tcon10 wow pulse">
                     <a href="#">
                         <div>
                             <img src="images/gnb_doc03 1 (1).png" alt="">
@@ -322,42 +329,46 @@
     </section>
 
     <section id="background1">
-        <h2>잠깐의 여유와 <br><span>달콤한 행복</span></h2>
+        <!-- <h2 class="wow slideInUp">잠깐의 여유와 달콤한 행복</h2> -->
     </section>
 
     <section class="MENU">
         <h2>DUNKIN DONUTS'S MENU</h2>
-        <div class="MENUWrap">
+        <div class="MENUWrap container">
             <ul>
                 <li>
-                    <a href="#"><img src="images/img_product_1.png" alt="">
+                    <a href="#" class="product">
+                        <figure><img src="images/img_product_1.png" alt=""></figure>
                         <p>도넛</p>
                         <div class="btn">
-                            <p>도넛 메뉴 보기</p>
+                            도넛 메뉴 보기
                         </div>
                     </a>
                 </li>
                 <li>
-                    <a href="#"><img src="images/img_product_2.png" alt="">
+                    <a href="#" class="product">
+                        <figure><img src="images/img_product_2.png" alt=""></figure>
                         <p>커피&음료</p>
                         <div class="btn">
-                            <p>커피&음료 메뉴 보기</p>
+                            커피&음료 메뉴 보기
                         </div>
                     </a>
                 </li>
                 <li>
-                    <a href="#"><img src="images/img_product_3.png" alt="">
+                    <a href="#" class="product">
+                        <figure><img src="images/img_product_3.png" alt=""></figure>
                         <p>샌드위치</p>
                         <div class="btn">
-                            <p>샌드위치 메뉴 보기</p>
+                            샌드위치 메뉴 보기
                         </div>
                     </a>
                 </li>
                 <li>
-                    <a href="#"><img src="images/img_product_5.png" alt="">
+                    <a href="#" class="product">
+                        <figure><img src="images/img_product_5.png" alt=""></figure>
                         <p>OTHERS</p>
                         <div class="btn">
-                            <p>기타 메뉴 보기</p>
+                            기타 메뉴 보기
                         </div>
                     </a>
                 </li>
@@ -366,9 +377,45 @@
     </section>
 
     <section id="background2">
-        <h2>잠깐의 여유와 <br><span>달콤한 행복</span></h2>
+        <!-- <h2>잠깐의 여유와 <br><span>달콤한 행복</span></h2> -->
     </section>
 
+    <section id="news">
+        <div class="newsWrap container">
+            <div class="newsText">
+                <figure><img src="images/Vector.png" alt=""></figure>
+                <h3>브랜드 소식</h3>
+                <p>던킨의 소식을<br>알려드립니다</p>
+                <div class="btn">
+                    <div class="prev"><img src="images/Frame 60.png" alt=""></div>
+                    <div class="next"><img src="images/Frame 59.png" alt=""></div>
+                </div>
+            </div>
+            <div class="slide2">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti dolorem tempore ab vitae soluta dolores, dolorum nemo quisquam praesentium ad?</p>
+                            <img src="images/1649060611(0).png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/1649060592(0).png" alt="">
+                            <p class="after_up">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti dolorem tempore ab vitae soluta dolores, dolorum nemo quisquam praesentium ad?</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti dolorem tempore ab vitae soluta dolores, dolorum nemo quisquam praesentium ad?</p>
+                            <img src="images/1649060725.png" alt="">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
 
     <script src="js/script.js"></script>
   
