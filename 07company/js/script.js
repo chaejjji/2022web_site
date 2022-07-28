@@ -39,6 +39,7 @@ $(".youtube").colorbox({
 
 // swiper
 var swiper = new Swiper(".mySwiper", {
+    
     loop:true,
     pagination: {
       el: ".swiper-pagination",
@@ -51,11 +52,7 @@ var swiper = new Swiper(".mySwiper", {
   });
 
 
-// dom
-// $(".dom").hover(function(){
-//     $(this).addClass("on")
-// },function(){
-//     $(this).removeClass("on")
-// })
+
+
 
 
