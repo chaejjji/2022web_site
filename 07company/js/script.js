@@ -37,8 +37,8 @@ $(".youtube").colorbox({
     iframe:true,innerWidth:700,innerHeight:394
 })
 
-// swiper
-var swiper = new Swiper(".mySwiper", {
+// swiper_visualWrap
+var swiper1 = new Swiper('.first', {
     
     loop:true,
     pagination: {
@@ -90,6 +90,8 @@ function slideNum2(){
     $(".slide_Text2>p").eq(num2).css({"z-index":view2++,opacity:0}).stop().animate({opacity:1},500)
 
 }
+
+// text#3
 setInterval(slideNum3,3000)
 
 let num3 = 0;
@@ -100,8 +102,37 @@ function slideNum3(){
         num3 = 0;
     }
     $(".slide_Text3>p").eq(num3).css({"z-index":view3++,opacity:0}).stop().animate({opacity:1},500)
-
 }
+
+// swiper_MENU
+
+var swiper2 = new Swiper('.second', {
+        
+    slidesPerView:2,
+    spaceBetween:10,
+    loop:false,
+    // loopAdditionalSlides:0,
+    pagination:false,
+    // pagination:{
+    //     el:".swiper-pagination",
+    //     clickable:true,
+    // },
+
+    breakpoints: {
+        768: {
+            slidesPerView: 4,
+            spaceBetween: 10,
+        },
+        // 1024: {
+        //     slidesPerView: 4,
+        //     spaceBetween: 10,
+
+        // },
+    },
+});
+
+
+
 
 
 
