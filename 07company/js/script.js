@@ -131,6 +131,37 @@ var swiper2 = new Swiper('.second', {
     },
 });
 
+// scroll_header
+document.querySelector(".scroll").innerHTML = window.pageYOffset;
+
+const scroll = document.querySelector(".scroll");
+const header = document.querySelector("#header");
+
+window.addEventListener("scroll",function(){
+    let scrollY = window.pageYOffset;
+
+    scroll.innerHTML = Math.floor(scrollY);
+
+    if (scrollY == 0){
+        header.setAttribute("style","background-color:transparent")
+    }else{
+        header.setAttribute("style","background-color:white")
+    }
+
+})
+
+// myBody.onwheel = function(e){
+//     console.log(e.wheelDelta)
+//     if(e.wheelDelta == -120){
+//         header.style.backgroundColor = "white"
+//     }else if(e.wheelDelta == 120){
+//         header.style.backgroundColor = "white"
+//     }else{
+//         header.style.backgroundColor = "transparent"
+//     }
+// }
+
+
 
 
 
