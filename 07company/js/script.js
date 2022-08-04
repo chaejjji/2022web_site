@@ -49,6 +49,14 @@ var swiper1 = new Swiper('.first', {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
     },
+    breakpoints:{
+        768: {
+            slidesPerView:1,
+
+        }
+        
+    
+    }
   });
 
 // #news_slide
@@ -111,7 +119,6 @@ var swiper2 = new Swiper('.second', {
     slidesPerView:2,
     spaceBetween:10,
     loop:false,
-    // loopAdditionalSlides:0,
     pagination:false,
     // pagination:{
     //     el:".swiper-pagination",
@@ -150,16 +157,32 @@ window.addEventListener("scroll",function(){
 
 })
 
-// myBody.onwheel = function(e){
-//     console.log(e.wheelDelta)
-//     if(e.wheelDelta == -120){
-//         header.style.backgroundColor = "white"
-//     }else if(e.wheelDelta == 120){
-//         header.style.backgroundColor = "white"
-//     }else{
-//         header.style.backgroundColor = "transparent"
-//     }
-// }
+// swiper_card
+var swiper3 = new Swiper('.third', {
+
+    slidesPerView:1,
+    spaceBetween:40,
+    loop:true,
+    centeredSlides:false,
+    loopAdditionalSlides:0,
+    pagination:false,
+    // autoplay:{
+    //     delay:3000,
+    //     disableOnInteraction:false,
+    // }
+      
+    // pagination:{
+    //     el:".swiper-pagination",
+    //     clickable:true,
+    // },
+
+    // breakpoints: {
+    //     768: {
+    //         slidesPerView: 3,
+    //         spaceBetween: 50,
+    //     },
+    // },
+});
 
 
 
