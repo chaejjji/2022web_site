@@ -1,4 +1,3 @@
-console.log("test");
 
 // header_Main
 $(".navbar>ul>li").hover(function(){
@@ -49,14 +48,14 @@ var swiper1 = new Swiper('.first', {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
     },
-    breakpoints:{
+    breakpoints: {
         768: {
-            slidesPerView:1,
 
         }
+    }
         
     
-    }
+
   });
 
 // #news_slide
@@ -120,6 +119,11 @@ var swiper2 = new Swiper('.second', {
     spaceBetween:10,
     loop:false,
     pagination:false,
+    //     autoplay:{
+    //     delay:3000,
+    //     disableOnInteraction:false,
+    // },
+
     // pagination:{
     //     el:".swiper-pagination",
     //     clickable:true,
@@ -127,18 +131,16 @@ var swiper2 = new Swiper('.second', {
 
     breakpoints: {
         768: {
-            slidesPerView: 4,
-            spaceBetween: 10,
+            slidesPerView:4,
+            spaceBetween:10,
+            enabled:false,
+        
         },
-        // 1024: {
-        //     slidesPerView: 4,
-        //     spaceBetween: 10,
-
-        // },
     },
 });
 
 // scroll_header
+
 document.querySelector(".scroll").innerHTML = window.pageYOffset;
 
 const scroll = document.querySelector(".scroll");
@@ -161,28 +163,42 @@ window.addEventListener("scroll",function(){
 var swiper3 = new Swiper('.third', {
 
     slidesPerView:1,
-    spaceBetween:40,
+    spaceBetween:20,
+    freeMode : false,
     loop:true,
-    centeredSlides:false,
-    loopAdditionalSlides:0,
     pagination:false,
+    // centeredSlides:true,
     // autoplay:{
     //     delay:3000,
     //     disableOnInteraction:false,
     // }
+    breakpoints: {
+        768: {
+        },
+    },
+
       
     // pagination:{
     //     el:".swiper-pagination",
     //     clickable:true,
     // },
 
-    // breakpoints: {
-    //     768: {
-    //         slidesPerView: 3,
-    //         spaceBetween: 50,
-    //     },
-    // },
 });
+
+// top
+
+$(window).scroll(function(){
+    let scrollY = window.pageYOffset
+
+    if($("body").height() / 3 < scrollY){
+        $(".top").fadeIn();
+    }else{
+        $(".top").fadeOut();
+    }
+})
+$(".top").click(function(){
+    $("html,body").animate({scrollTop:0},300)
+})
 
 
 

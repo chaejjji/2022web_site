@@ -12,9 +12,7 @@ body{font-family: 'Nanum Gothic', sans-serif;overflow-x: hidden;}
 .container{max-width: 1240px;margin: 0 auto;}
 
 /* header  */
-#header{position:fixed;width: 100%;z-index:500;
-    box-shadow: 0 0 10px rgba(0,0,0,.5);
-}
+#header{position:fixed;width: 100%;z-index:800;}
 #header h1{padding:10px;}
 
 .navbarWrap{display: flex;padding-top:10px;}
@@ -87,9 +85,10 @@ button{width: 100px;height: 40px;background-color:#E5478C;border: 0 none;
 
 /* visual_swiper */
 .visualWrap{width: 100vw;position: relative;
-    background-position: center;
-    background-size: auto;
+    background-position: cover;
+    background-size: cover;
     background-repeat: no-repeat;
+    display: flex;justify-content: center;align-items: center;
 }
 .visualWrap .swiper-button-next:after,.swiper-button-prev:after{visibility:hidden;}
 .visualWrap .swiper-button-next,.swiper-button-prev{width: 81px;}
@@ -110,7 +109,7 @@ button{width: 100px;height: 40px;background-color:#E5478C;border: 0 none;
 }
 
 /* contents */
-.contents{background: #998E86;width: 100%;padding-bottom:80px;}
+.contents{background: #998E86;width: 100vw;padding-bottom:80px;}
 
 .sectionWrap>ul{display: flex;flex-wrap:wrap;position: relative;}
 .sectionWrap>ul>li{
@@ -238,17 +237,16 @@ button{width: 100px;height: 40px;background-color:#E5478C;border: 0 none;
 
 /* background */
 #background1{
-    height: 26vh;
+    height: 26vh;width: 100vw;
     background-image: url(../images/img_banner_1_1.jpg);
     background-attachment:fixed;
     background-position:center;
     background-repeat:no-repeat;
 }
 
-/* #background1 h2{font-size:40px;font-weight:800;color:#D0BE98;text-shadow:0 5px 5px rgba(0,0,0,.6)} */
 
 #background2{
-    height: 26vh;
+    height: 26vh;width: 100vw;
     background-image: url(../images/img_banner_1_1.jpg);
     background-attachment:fixed;
     background-position:center;
@@ -256,14 +254,13 @@ button{width: 100px;height: 40px;background-color:#E5478C;border: 0 none;
 }
 
 /* MENU */
-.MENU{background: #F6F5F1;}
+.MENU{background: #F6F5F1;width: 100vw;}
 .MENU h2{padding-top:80px;text-align:center;font-size:40px;color:#563320;font-weight:800}
 .MENUWrap{padding:50px 0;}
-/* .MENUWrap .swiper{height: 100px;} */
 .MENUWrap .swiper-wrapper{display: flex;justify-content: center;align-items: center;}
 
 
-.MENUWrap .swiper-slide{cursor:pointer;width: 310px;display: flex;flex-direction:column;align-items: center;justify-content: center;}
+.MENUWrap .swiper-slide{cursor:pointer;width:100vw;display: flex;flex-direction:column;align-items: center;justify-content: center;}
 .MENUWrap img{margin-bottom: 20px;}
 .MENUWrap .swiper-slide:hover figure{animation:product 0.7s infinite alternate forwards linear;}
 
@@ -281,7 +278,7 @@ button{width: 100px;height: 40px;background-color:#E5478C;border: 0 none;
 }
 
 /* news */
-#news{background-color: #D0BE98;cursor:pointer;}
+#news{background-color: #D0BE98;cursor:pointer;width: 100vw;}
 #news .newsWrap{padding:80px 0;display: flex;overflow:hidden;position: relative;cursor:pointer;}
 .newsWrap .newsText{font-size:24px;background: #563320;height: 620px;width: 310px;position: relative;z-index:10;
     display: flex;flex-direction:column;justify-content: center;align-items: center;gap:10px;overflow:hidden;
@@ -322,7 +319,7 @@ button{width: 100px;height: 40px;background-color:#E5478C;border: 0 none;
     position: absolute;top:-40px;transform:rotate(-90deg)
 } */
 
-.newsCard{background: #F6F2E8;padding-top:50px;margin: 0 auto;cursor:pointer;display:none;}
+.newsCard{width: 100vw;background: #F6F2E8;padding-top:50px;margin: 0 auto;cursor:pointer;display:none;}
 .CardWrap>.newsText{display: flex;justify-content: center;align-items: center;
     margin-bottom: 50px;}
 
@@ -330,21 +327,19 @@ button{width: 100px;height: 40px;background-color:#E5478C;border: 0 none;
 .CardWrap>.newsText>figure>img{width: 100%;height: 100%;}
 .CardWrap>.newsText>h3{color:#563320;font-size:20px;font-weight:800;}
 
-/* .Card{display: flex;justify-content: center;align-items: center;} */
 .newsCard>.CardWrap .swiper-wrapper{display: flex;justify-content: center;align-items: center;margin-bottom: 50px;}
-.newsCard>.CardWrap .swiper-slide{width: 310px !important;
+.newsCard>.CardWrap .swiper-slide{width: 240px !important;
     display: flex;flex-direction:column;box-shadow:0 0 10px rgba(0,0,0,.5);
 }
-/* .newsCard>.CardWrap .swiper{gap:10px;} */
-.newsCard>.CardWrap .swiper-slide>div{width: 310px;height: 310px;}
+.newsCard>.CardWrap .swiper-slide>div{width: 240px;height: 240px;}
 .newsCard>.CardWrap .swiper-slide>div>img{width: 100%;height: 100%;border: 1px solid #563320;border-bottom: 0 none;}
-.newsCard>.CardWrap .swiper-slide p{width: 310px;text-align:left;line-height:20px;font-size:16px;
+.newsCard>.CardWrap .swiper-slide p{width: 240px;text-align:left;line-height:20px;font-size:16px;
     border: 1px solid #563320;border-top: 0 none;padding:10px 10px;
 }
 
 
 /* bottomWrap */
-#bottom{background: #D0BE98;}
+#bottom{width: 100vw;background: #D0BE98;}
 .bottomWrap{display: flex;gap:20px;padding-bottom:50px;}
 .bottomWrap>div{width: 800px;height: 200px;position: relative;cursor:pointer;transition:.3s}
 .bottomWrap>div:hover{transform:translateY(-10px);box-shadow:0 0 8px rgba(0,0,0,.5);border-radius:10px;}
@@ -368,7 +363,7 @@ button{width: 100px;height: 40px;background-color:#E5478C;border: 0 none;
 .Bbtn:hover{color:#333;font-weight:800;}
 
 /* footer */
-#footer{background: #563320;}
+#footer{width: 100vw;background: #563320;}
 .footerWrap{display: flex;padding:50px;position: relative;}
 .footerWrap h5{margin-right: 40px;}
 .footerWrap h5>a{display: flex;flex-direction:column;align-items: center;}
@@ -397,6 +392,9 @@ button{width: 100px;height: 40px;background-color:#E5478C;border: 0 none;
 
 .SNS>ul>li>a>img:hover{transform:translateY(-8px) scale(0.8)}
 
+.top{font-size:40px;color:#E5478C;position: fixed;
+    right: 20px;bottom: 10px;cursor:pointer;display:none;
+}
 
 
 
@@ -450,6 +448,9 @@ button{width: 100px;height: 40px;background-color:#E5478C;border: 0 none;
 }
 
 @media (max-width: 767px) {
+    .MENUWrap .btn,.MENUWrap .swiper-slide,
+    .bottomWrap>div,.Bbtn,
+    .footerWrap .txtWrap .btn1,.footerWrap .txtWrap .btn2{pointer-events: none;}
     .navbar {
         display: none;
     }
@@ -487,11 +488,14 @@ button{width: 100px;height: 40px;background-color:#E5478C;border: 0 none;
     }
 
 
+    .visualWrap .swiper{width: 100%;height: 400px;}
+    /* .visualWrap .swiper-pagination{display:none;} */
 
     .swiper-button-next,
     .swiper-button-prev {
         display: none;
     }
+
 
     .sectionWrap>ul>li:nth-child(2) {
         display: none;
